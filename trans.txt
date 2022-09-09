@@ -1,0 +1,2238 @@
+WEBVTT
+
+1
+00:02:46.650 --> 00:02:47.940
+Campo Elias Suarez Villagran: hey Max how are you.
+
+2
+00:02:48.810 --> 00:02:49.350
+Max Ens: i'm great.
+
+3
+00:02:50.880 --> 00:03:09.240
+Campo Elias Suarez Villagran: that's nice so yeah today we're going to have our last session of the math and Python circle, so does, let me just remember during the last meeting we were discussing about.
+
+4
+00:03:10.290 --> 00:03:11.760
+Campo Elias Suarez Villagran: yeah simulating.
+
+5
+00:03:13.110 --> 00:03:15.810
+Campo Elias Suarez Villagran: dice right that was.
+
+6
+00:03:17.190 --> 00:03:21.990
+Campo Elias Suarez Villagran: That was our last meeting we were simulating, for example, if we have I don't know.
+
+7
+00:03:23.250 --> 00:03:26.940
+Campo Elias Suarez Villagran: Three dice and we are rolling the dice like.
+
+8
+00:03:27.960 --> 00:03:33.630
+Campo Elias Suarez Villagran: 100 times what what happened with the with the possibilities you remember that.
+
+9
+00:03:35.490 --> 00:03:35.790
+Max Ens: yeah.
+
+10
+00:03:38.280 --> 00:03:46.110
+Campo Elias Suarez Villagran: yeah actually That was our last meeting so yeah let's i'm going to send you.
+
+11
+00:03:47.250 --> 00:03:50.040
+Campo Elias Suarez Villagran: The collaborative document.
+
+12
+00:03:51.150 --> 00:03:52.440
+Campo Elias Suarez Villagran: So we can.
+
+13
+00:03:54.660 --> 00:03:56.220
+Campo Elias Suarez Villagran: Work on that.
+
+14
+00:03:59.130 --> 00:04:02.340
+Campo Elias Suarez Villagran: Please confirm to me if you can open the document.
+
+15
+00:04:04.680 --> 00:04:05.130
+Max Ens: Okay.
+
+16
+00:04:14.070 --> 00:04:14.490
+Max Ens: Okay.
+
+17
+00:04:17.640 --> 00:04:18.570
+Max Ens: yep I can see it.
+
+18
+00:04:20.700 --> 00:04:24.450
+Campo Elias Suarez Villagran: Can you see the corresponding code.
+
+19
+00:04:28.800 --> 00:04:30.240
+Campo Elias Suarez Villagran: That was or maybe.
+
+20
+00:04:32.100 --> 00:04:35.280
+Campo Elias Suarez Villagran: don't remember if I did this.
+
+21
+00:04:37.020 --> 00:04:57.060
+Campo Elias Suarez Villagran: This code with your with dessert as maybe was with the other guys so anyway anyway we're going we're going to do, do something similar in this not needed to do the same, we can do something different Okay, we can try to solve by earthen.
+
+22
+00:04:58.320 --> 00:05:03.360
+Campo Elias Suarez Villagran: Their way in which we can generate I want to know how to.
+
+23
+00:05:04.890 --> 00:05:18.990
+Campo Elias Suarez Villagran: simulate, for example, I have five dice Okay, and the idea is up, let me just here i'm going to share the screen i'm going to here to the end.
+
+24
+00:05:22.170 --> 00:05:34.890
+Campo Elias Suarez Villagran: And here, in this new tab I want to simulate I want to create a program simulating the possible results when I am rolling I don't know five or three days.
+
+25
+00:05:36.210 --> 00:05:43.530
+Campo Elias Suarez Villagran: At a different number of days so actually what they want to do is first of all I want to ask to the user.
+
+26
+00:05:44.970 --> 00:05:49.380
+Campo Elias Suarez Villagran: To Informations Okay, the first inspiration we're going to do the user is.
+
+27
+00:05:50.520 --> 00:05:56.790
+Campo Elias Suarez Villagran: what's the number of dice, for example, are you going to roll three guys five guys.
+
+28
+00:05:57.930 --> 00:05:58.260
+Max Ens: That.
+
+29
+00:05:59.310 --> 00:06:00.630
+Campo Elias Suarez Villagran: We already did that right.
+
+30
+00:06:00.840 --> 00:06:01.320
+Yes.
+
+31
+00:06:02.580 --> 00:06:02.940
+Campo Elias Suarez Villagran: So.
+
+32
+00:06:04.890 --> 00:06:12.840
+Campo Elias Suarez Villagran: You remember Okay, and the second part was what's happened if I roll the dice I don't know a.
+
+33
+00:06:14.310 --> 00:06:16.320
+Campo Elias Suarez Villagran: 1000 times we also did that.
+
+34
+00:06:18.810 --> 00:06:20.190
+Max Ens: yeah We made it rowan does.
+
+35
+00:06:21.960 --> 00:06:29.160
+Campo Elias Suarez Villagran: Okay, so I tell you Okay, so we were already did it the two parts right.
+
+36
+00:06:30.990 --> 00:06:46.020
+Campo Elias Suarez Villagran: Okay, so do you want, we can create another simulation so we're going to do today what we're going to do today is to create a different simulation Okay, in the previous meeting we were.
+
+37
+00:06:46.830 --> 00:06:58.320
+Campo Elias Suarez Villagran: A we weren't simulating dice Okay, so we have yeah this random variable in that case we're rolling the dice and we're having the different results.
+
+38
+00:06:59.340 --> 00:07:07.710
+Campo Elias Suarez Villagran: We can do something different, today, we can, for example, what happened hey Let me explain you again the game.
+
+39
+00:07:10.260 --> 00:07:11.730
+Campo Elias Suarez Villagran: The game is the next.
+
+40
+00:07:12.870 --> 00:07:19.740
+Campo Elias Suarez Villagran: Okay, so we have going okay it's eight again we have.
+
+41
+00:07:21.480 --> 00:07:22.530
+Campo Elias Suarez Villagran: Different.
+
+42
+00:07:24.780 --> 00:07:31.260
+Campo Elias Suarez Villagran: coins so we're going to toss the coins okay and idea.
+
+43
+00:07:32.520 --> 00:07:39.180
+Campo Elias Suarez Villagran: hey we know the coins have kids and days right, so the idea is.
+
+44
+00:07:40.320 --> 00:07:40.770
+Campo Elias Suarez Villagran: If.
+
+45
+00:07:42.180 --> 00:07:43.950
+Campo Elias Suarez Villagran: If we have the the next.
+
+46
+00:07:45.450 --> 00:07:47.340
+Campo Elias Suarez Villagran: Suppose we have hits.
+
+47
+00:07:48.570 --> 00:07:48.960
+here.
+
+48
+00:07:52.770 --> 00:07:55.410
+Campo Elias Suarez Villagran: Okay, we have the two possibilities okay.
+
+49
+00:07:57.030 --> 00:07:59.550
+Campo Elias Suarez Villagran: And the game is an x we're going to.
+
+50
+00:08:00.780 --> 00:08:05.130
+Campo Elias Suarez Villagran: Do tossed the coins if we have.
+
+51
+00:08:06.180 --> 00:08:07.080
+Campo Elias Suarez Villagran: The same.
+
+52
+00:08:09.270 --> 00:08:10.800
+Campo Elias Suarez Villagran: hit hit hit Earth.
+
+53
+00:08:13.230 --> 00:08:22.650
+Campo Elias Suarez Villagran: Day is in in when I am a doing when when i'm testing the coins, I am going to earn.
+
+54
+00:08:24.270 --> 00:08:26.250
+Campo Elias Suarez Villagran: $10 OK.
+
+55
+00:08:27.090 --> 00:08:27.690
+Max Ens: OK i'm.
+
+56
+00:08:27.720 --> 00:08:36.150
+Campo Elias Suarez Villagran: going to earn $10 but you know there's case if we have, for example, something like the next.
+
+57
+00:08:37.170 --> 00:08:38.220
+Campo Elias Suarez Villagran: CAP, for example.
+
+58
+00:08:39.540 --> 00:08:41.160
+Campo Elias Suarez Villagran: In hitter.
+
+59
+00:08:42.990 --> 00:08:44.790
+Campo Elias Suarez Villagran: or a combination if we have.
+
+60
+00:08:46.410 --> 00:08:51.960
+Campo Elias Suarez Villagran: A 10 kids are going to lose $5.
+
+61
+00:08:54.030 --> 00:08:54.330
+Max Ens: OK.
+
+62
+00:08:54.360 --> 00:08:55.650
+Campo Elias Suarez Villagran: OK that's the point.
+
+63
+00:08:57.030 --> 00:08:57.300
+Campo Elias Suarez Villagran: If.
+
+64
+00:08:58.560 --> 00:09:14.370
+Campo Elias Suarez Villagran: The three R equals we're going to earn $10 if one of them is different we're going to lose $5 okay and we're going to play this game.
+
+65
+00:09:15.810 --> 00:09:18.780
+Campo Elias Suarez Villagran: I don't know 100 times.
+
+66
+00:09:21.720 --> 00:09:22.140
+Max Ens: Okay.
+
+67
+00:09:22.890 --> 00:09:27.060
+Campo Elias Suarez Villagran: And we want to know after 100 times what this.
+
+68
+00:09:28.350 --> 00:09:46.020
+Campo Elias Suarez Villagran: What is our or money already after playing this game 100 times, I am going to earn or I am wanting and going to and morning, or I am going to lose more money that's that's the end of the game so.
+
+69
+00:09:47.400 --> 00:09:49.680
+Campo Elias Suarez Villagran: Initially we have only three coins okay.
+
+70
+00:09:51.060 --> 00:09:54.840
+Campo Elias Suarez Villagran: So I want to know your your ideas.
+
+71
+00:09:56.220 --> 00:10:03.540
+Campo Elias Suarez Villagran: What can we do, for example, in that case I try to bring this similar to the case of the of the days.
+
+72
+00:10:06.060 --> 00:10:06.480
+Max Ens: Okay.
+
+73
+00:10:13.230 --> 00:10:15.330
+Max Ens: Okay hey should I share my screen.
+
+74
+00:10:16.260 --> 00:10:17.370
+Campo Elias Suarez Villagran: yeah please.
+
+75
+00:10:18.960 --> 00:10:19.260
+Campo Elias Suarez Villagran: hmm.
+
+76
+00:10:19.590 --> 00:10:20.610
+You have to stop sharing.
+
+77
+00:10:21.870 --> 00:10:23.430
+Campo Elias Suarez Villagran: yep okay.
+
+78
+00:10:29.340 --> 00:10:29.640
+Max Ens: Okay.
+
+79
+00:10:34.710 --> 00:10:35.010
+Max Ens: Okay.
+
+80
+00:10:37.230 --> 00:10:39.330
+Max Ens: i'm here.
+
+81
+00:10:45.210 --> 00:10:45.570
+Max Ens: Okay.
+
+82
+00:10:48.840 --> 00:10:51.660
+Max Ens: We can start with.
+
+83
+00:11:01.410 --> 00:11:03.990
+Max Ens: to import random first.
+
+84
+00:11:25.980 --> 00:11:30.900
+Campo Elias Suarez Villagran: can use the previous code, we use for the for the days.
+
+85
+00:11:32.910 --> 00:11:37.470
+Campo Elias Suarez Villagran: Okay, so yeah actually you can use the previous codes.
+
+86
+00:11:38.850 --> 00:11:39.390
+Max Ens: Okay.
+
+87
+00:11:43.170 --> 00:11:44.160
+Max Ens: copy this.
+
+88
+00:11:44.820 --> 00:11:48.810
+Campo Elias Suarez Villagran: yeah um let's try to adapt to our case.
+
+89
+00:11:49.560 --> 00:11:50.490
+Max Ens: And then change it.
+
+90
+00:11:54.420 --> 00:11:54.930
+Max Ens: Okay.
+
+91
+00:12:11.280 --> 00:12:12.900
+Max Ens: And then we can delete that.
+
+92
+00:12:14.340 --> 00:12:14.910
+Max Ens: and
+
+93
+00:12:25.230 --> 00:12:30.060
+Campo Elias Suarez Villagran: Okay, Nice in certain number of time you want the coins.
+
+94
+00:12:30.420 --> 00:12:32.400
+Max Ens: And then number dice will be three.
+
+95
+00:12:33.480 --> 00:12:35.970
+Campo Elias Suarez Villagran: yeah let's turn on the with three huh.
+
+96
+00:12:37.230 --> 00:12:37.740
+Max Ens: Okay.
+
+97
+00:13:00.450 --> 00:13:02.460
+Max Ens: Wait so now.
+
+98
+00:13:20.160 --> 00:13:22.110
+Campo Elias Suarez Villagran: Okay nice so.
+
+99
+00:13:23.640 --> 00:13:25.260
+Campo Elias Suarez Villagran: So you're going to generate.
+
+100
+00:13:26.880 --> 00:13:30.450
+Campo Elias Suarez Villagran: Our random number between one and two okay.
+
+101
+00:13:31.650 --> 00:13:32.910
+Campo Elias Suarez Villagran: that's excellent.
+
+102
+00:13:36.000 --> 00:13:39.810
+Campo Elias Suarez Villagran: So, in some way, we need to to create a code.
+
+103
+00:13:40.920 --> 00:13:58.380
+Campo Elias Suarez Villagran: Determining if we have the numbers if the three numbers are equal, for example, if we have hits hits hits it's going to be Doo Doo Doo so if the three numbers are equal we're going to Aaron dollars.
+
+104
+00:14:01.200 --> 00:14:01.560
+Max Ens: Okay.
+
+105
+00:14:02.790 --> 00:14:03.300
+Campo Elias Suarez Villagran: mm hmm.
+
+106
+00:14:18.240 --> 00:14:19.860
+Max Ens: let's see if I can make this.
+
+107
+00:14:22.440 --> 00:14:22.980
+Max Ens: simpler.
+
+108
+00:14:30.270 --> 00:14:30.840
+Max Ens: Just.
+
+109
+00:14:52.170 --> 00:14:52.560
+Max Ens: Okay.
+
+110
+00:15:08.340 --> 00:15:10.410
+Campo Elias Suarez Villagran: Oh that's nice uh huh.
+
+111
+00:15:25.260 --> 00:15:25.920
+Max Ens: and
+
+112
+00:15:26.550 --> 00:15:30.660
+Campo Elias Suarez Villagran: So in that case you're going to consider the number season one.
+
+113
+00:15:31.530 --> 00:15:32.220
+Campo Elias Suarez Villagran: sounds good.
+
+114
+00:15:36.930 --> 00:15:37.830
+Max Ens: And then.
+
+115
+00:15:39.510 --> 00:15:40.710
+Max Ens: We can just do.
+
+116
+00:15:47.220 --> 00:15:48.330
+Max Ens: For them do.
+
+117
+00:15:54.210 --> 00:15:55.050
+Max Ens: me now.
+
+118
+00:16:10.650 --> 00:16:12.630
+Max Ens: And then we can get rid of the plot.
+
+119
+00:16:15.180 --> 00:16:16.890
+Max Ens: We can just say.
+
+120
+00:16:53.580 --> 00:16:54.900
+Max Ens: Oh, I need to do.
+
+121
+00:17:08.190 --> 00:17:08.730
+Campo Elias Suarez Villagran: mm hmm.
+
+122
+00:17:14.910 --> 00:17:15.480
+whoops.
+
+123
+00:17:20.040 --> 00:17:20.640
+Max Ens: Yes.
+
+124
+00:17:38.880 --> 00:17:41.130
+Max Ens: Also, how do I say.
+
+125
+00:17:46.950 --> 00:17:49.470
+Max Ens: All of this way.
+
+126
+00:17:54.600 --> 00:17:59.970
+Max Ens: Or, this was one, how do I make it that's all of this, or.
+
+127
+00:18:01.230 --> 00:18:01.770
+Max Ens: This.
+
+128
+00:18:03.180 --> 00:18:06.570
+Campo Elias Suarez Villagran: Actually, there is a way, maybe it's not the best one.
+
+129
+00:18:08.880 --> 00:18:10.410
+Campo Elias Suarez Villagran: About you can use just.
+
+130
+00:18:11.550 --> 00:18:14.940
+Campo Elias Suarez Villagran: A leaf after this code.
+
+131
+00:18:15.360 --> 00:18:17.310
+Campo Elias Suarez Villagran: Because i'm not sure that.
+
+132
+00:18:17.610 --> 00:18:18.360
+Campo Elias Suarez Villagran: yeah you can.
+
+133
+00:18:18.930 --> 00:18:19.500
+Either leave.
+
+134
+00:18:20.580 --> 00:18:22.200
+Campo Elias Suarez Villagran: yeah let's try that.
+
+135
+00:18:38.130 --> 00:18:38.400
+Max Ens: yeah.
+
+136
+00:18:40.530 --> 00:18:41.340
+Max Ens: And then.
+
+137
+00:19:27.540 --> 00:19:30.810
+Max Ens: Wait doesn't need indentation yep.
+
+138
+00:19:36.480 --> 00:19:37.560
+Max Ens: Okay, and then.
+
+139
+00:20:11.400 --> 00:20:12.030
+Max Ens: Is this.
+
+140
+00:20:29.880 --> 00:20:30.330
+Max Ens: Okay.
+
+141
+00:20:31.560 --> 00:20:32.160
+Campo Elias Suarez Villagran: mm hmm.
+
+142
+00:20:36.510 --> 00:20:39.960
+Max Ens: Okay, and I think it works now.
+
+143
+00:20:48.240 --> 00:20:48.780
+Campo Elias Suarez Villagran: Okay.
+
+144
+00:20:55.200 --> 00:20:56.250
+Max Ens: Well, was that.
+
+145
+00:20:58.110 --> 00:20:59.670
+Max Ens: not correct because.
+
+146
+00:21:05.250 --> 00:21:07.290
+Campo Elias Suarez Villagran: Ah, OK, I truly.
+
+147
+00:21:09.510 --> 00:21:21.750
+Campo Elias Suarez Villagran: Am your case yeah he for the live, they are in the same event, so I truly this leaf, let me show you.
+
+148
+00:21:22.920 --> 00:21:26.490
+Campo Elias Suarez Villagran: Do this a little little bit here.
+
+149
+00:21:27.750 --> 00:21:31.950
+Campo Elias Suarez Villagran: else calls if I leave unless they are the same.
+
+150
+00:21:34.620 --> 00:21:35.970
+Campo Elias Suarez Villagran: In the same line.
+
+151
+00:21:38.880 --> 00:21:40.500
+Max Ens: But what about this is.
+
+152
+00:21:40.620 --> 00:21:42.060
+Max Ens: That it says is wrong.
+
+153
+00:21:43.500 --> 00:21:45.480
+Campo Elias Suarez Villagran: Okay let's see.
+
+154
+00:21:56.490 --> 00:22:04.470
+Campo Elias Suarez Villagran: That I think is because this it needs to be in accordance with the rest of day.
+
+155
+00:22:05.490 --> 00:22:10.020
+Campo Elias Suarez Villagran: That they belong to the different group so.
+
+156
+00:22:10.110 --> 00:22:12.240
+Max Ens: yeah oh so this.
+
+157
+00:22:13.320 --> 00:22:13.830
+Max Ens: yeah.
+
+158
+00:22:17.730 --> 00:22:19.140
+Campo Elias Suarez Villagran: yeah excellent.
+
+159
+00:22:25.200 --> 00:22:25.590
+Max Ens: yeah.
+
+160
+00:22:26.550 --> 00:22:28.590
+Campo Elias Suarez Villagran: Okay let's try again with 100.
+
+161
+00:22:30.090 --> 00:22:31.980
+Campo Elias Suarez Villagran: Okay let's try several times with.
+
+162
+00:22:32.010 --> 00:22:32.640
+100.
+
+163
+00:22:34.410 --> 00:22:36.450
+Campo Elias Suarez Villagran: let's begin with 100.
+
+164
+00:22:38.070 --> 00:22:45.360
+Campo Elias Suarez Villagran: So you can see, you can see, you are having different bodies let's let's try again let's try again.
+
+165
+00:22:47.520 --> 00:22:49.980
+100.
+
+166
+00:22:51.450 --> 00:22:55.290
+Campo Elias Suarez Villagran: So, for example, in the first case in the first case, the answer.
+
+167
+00:22:56.310 --> 00:23:01.080
+Campo Elias Suarez Villagran: was about minus 200 I think.
+
+168
+00:23:02.190 --> 00:23:02.460
+Max Ens: yeah.
+
+169
+00:23:02.550 --> 00:23:10.200
+Campo Elias Suarez Villagran: Then minus 125 then minus 50 and we're having different values okay.
+
+170
+00:23:11.280 --> 00:23:20.790
+Campo Elias Suarez Villagran: And that's the point that's the idea of the simulation when we're simulating the idea, and what was the idea of making.
+
+171
+00:23:22.050 --> 00:23:25.110
+Campo Elias Suarez Villagran: A book or making a graph of the situation.
+
+172
+00:23:26.460 --> 00:23:53.130
+Campo Elias Suarez Villagran: The idea is for example if we are going to run this program several times, that is exactly a de Monte Carlo method we're going to see, for example, I didn't know this is the w minus 200 minus 100 minus 50 right, then the minus 300.
+
+173
+00:23:54.960 --> 00:24:04.950
+Campo Elias Suarez Villagran: And at the end we're going to have song bars okay we're going to have here the histogram and it's going to play less.
+
+174
+00:24:05.730 --> 00:24:29.280
+Campo Elias Suarez Villagran: What is the proportion of times the final value it's going to be, for example, minus 300 or the final bodies minus 200 equals actually is changing that a lot of times so now we're going to do something similar to the case of the dice we're going to stir the information.
+
+175
+00:24:29.430 --> 00:24:42.390
+Campo Elias Suarez Villagran: we're going to do this experiment several times okay we're going to repeat this experiment I don't know 1000 times and we're going to start information in a vector okay.
+
+176
+00:24:42.960 --> 00:24:54.600
+Campo Elias Suarez Villagran: And then, after that we're going to plot or we're going to get we're going to create that graphic showing us what is the final distribution of the plot because, let me.
+
+177
+00:24:55.200 --> 00:25:05.280
+Campo Elias Suarez Villagran: Explain you why it's so important in my you're going or you're making an experiment like thousand times, for example, derelict in a casino.
+
+178
+00:25:06.510 --> 00:25:18.120
+Campo Elias Suarez Villagran: Because he knows actually the casinos know what is the secular distribution or they know what is the proportion of times that the person is going to and some of the money or.
+
+179
+00:25:19.110 --> 00:25:32.760
+Campo Elias Suarez Villagran: amount of money so we're going to do something similar simulating means we're going to do the same, a lot of times and, at the end we're going to discover more or less what is the distribution.
+
+180
+00:25:33.720 --> 00:25:43.050
+Campo Elias Suarez Villagran: So we are still working in that problem, but now we're going to do that experiment, at no 1000 or.
+
+181
+00:25:44.730 --> 00:25:45.330
+Campo Elias Suarez Villagran: yeah or.
+
+182
+00:25:46.410 --> 00:25:50.730
+Campo Elias Suarez Villagran: An arbitrary number of times we're going to start information.
+
+183
+00:25:51.930 --> 00:25:56.730
+Campo Elias Suarez Villagran: And we're going to make a graphic at the end with all those information.
+
+184
+00:26:05.070 --> 00:26:05.520
+Campo Elias Suarez Villagran: Good.
+
+185
+00:26:11.430 --> 00:26:13.170
+Campo Elias Suarez Villagran: Okay excellent.
+
+186
+00:26:14.280 --> 00:26:14.880
+Max Ens: and
+
+187
+00:26:24.900 --> 00:26:25.230
+Max Ens: way.
+
+188
+00:26:38.610 --> 00:26:40.380
+Max Ens: yeah we want this in.
+
+189
+00:26:43.800 --> 00:26:46.290
+Max Ens: Okay, so this should also be.
+
+190
+00:27:14.040 --> 00:27:16.170
+Max Ens: And then, here we can make this.
+
+191
+00:27:18.300 --> 00:27:19.170
+Max Ens: Is on.
+
+192
+00:27:21.930 --> 00:27:23.010
+Campo Elias Suarez Villagran: Okay yeah.
+
+193
+00:27:23.670 --> 00:27:24.510
+Max Ens: And then.
+
+194
+00:27:41.190 --> 00:27:42.480
+Max Ens: We couldn't do.
+
+195
+00:27:46.740 --> 00:27:46.890
+Max Ens: It.
+
+196
+00:27:54.390 --> 00:27:54.930
+Max Ens: up here.
+
+197
+00:28:15.720 --> 00:28:17.070
+Max Ens: Yes, and then.
+
+198
+00:28:19.350 --> 00:28:20.100
+Max Ens: And then.
+
+199
+00:28:37.560 --> 00:28:38.040
+Max Ens: This.
+
+200
+00:29:18.360 --> 00:29:18.780
+Max Ens: OK.
+
+201
+00:29:20.670 --> 00:29:21.630
+Max Ens: And then here.
+
+202
+00:29:33.060 --> 00:29:33.330
+well.
+
+203
+00:29:54.240 --> 00:29:54.630
+Max Ens: Okay.
+
+204
+00:30:02.220 --> 00:30:02.400
+Oh.
+
+205
+00:30:04.050 --> 00:30:04.350
+yeah.
+
+206
+00:30:15.270 --> 00:30:17.670
+Campo Elias Suarez Villagran: Are you need another prentice I think.
+
+207
+00:30:20.340 --> 00:30:20.550
+hey.
+
+208
+00:30:29.310 --> 00:30:40.320
+Campo Elias Suarez Villagran: No 1080 Okay, maybe it's not a good idea.
+
+209
+00:30:42.990 --> 00:30:43.530
+Campo Elias Suarez Villagran: Okay.
+
+210
+00:30:44.550 --> 00:30:54.810
+Campo Elias Suarez Villagran: let's go back just I only want the graph okay just delete that the part of the code printing money yeah.
+
+211
+00:30:56.490 --> 00:30:57.390
+Campo Elias Suarez Villagran: You can delete.
+
+212
+00:31:07.260 --> 00:31:07.860
+Campo Elias Suarez Villagran: Also.
+
+213
+00:31:09.750 --> 00:31:10.800
+Campo Elias Suarez Villagran: Turn number.
+
+214
+00:31:13.980 --> 00:31:14.550
+Campo Elias Suarez Villagran: Okay.
+
+215
+00:31:19.230 --> 00:31:21.630
+Campo Elias Suarez Villagran: Let me see built his.
+
+216
+00:31:23.580 --> 00:31:24.690
+Campo Elias Suarez Villagran: Money beans.
+
+217
+00:31:30.450 --> 00:31:30.810
+Max Ens: Wait.
+
+218
+00:31:32.370 --> 00:31:32.760
+Campo Elias Suarez Villagran: Tell me.
+
+219
+00:31:32.820 --> 00:31:35.340
+Max Ens: leftist always just gives you an array.
+
+220
+00:31:36.270 --> 00:31:37.110
+Campo Elias Suarez Villagran: What why what.
+
+221
+00:31:38.580 --> 00:31:44.160
+Max Ens: But that is always gives you enter it it just it gives you this.
+
+222
+00:31:46.350 --> 00:31:47.370
+Campo Elias Suarez Villagran: disarray.
+
+223
+00:31:48.030 --> 00:31:50.940
+Max Ens: Like you always give it like here, it also.
+
+224
+00:31:51.360 --> 00:31:54.570
+Campo Elias Suarez Villagran: yeah actually disarray disorder is very important.
+
+225
+00:31:55.620 --> 00:32:02.610
+Campo Elias Suarez Villagran: In that cases weird, but they do have the array is the next there a is going to tell you.
+
+226
+00:32:03.900 --> 00:32:04.530
+Campo Elias Suarez Villagran: off.
+
+227
+00:32:07.080 --> 00:32:11.610
+Campo Elias Suarez Villagran: let's try with few cases let's try only.
+
+228
+00:32:12.720 --> 00:32:18.810
+Campo Elias Suarez Villagran: For example, do the same, but sleep only 10 times okay only 10.
+
+229
+00:32:20.430 --> 00:32:23.670
+Campo Elias Suarez Villagran: run the command again and flip only.
+
+230
+00:32:28.470 --> 00:32:39.450
+Campo Elias Suarez Villagran: Okay, in that case is what did you have these hurry, these are a actually we have two different race Okay, the first one.
+
+231
+00:32:43.980 --> 00:32:44.190
+Campo Elias Suarez Villagran: one.
+
+232
+00:32:45.750 --> 00:32:50.160
+Campo Elias Suarez Villagran: And the second one okay so actually what happens is the next.
+
+233
+00:32:51.240 --> 00:32:53.250
+Campo Elias Suarez Villagran: We have, in that case.
+
+234
+00:32:54.810 --> 00:33:14.280
+Campo Elias Suarez Villagran: We have, in that case, for example, those are the possible results after after the experiment so, for example, in one case it you finished with minus 245 another case.
+
+235
+00:33:15.870 --> 00:33:28.140
+Campo Elias Suarez Villagran: are actually that are their ranges so let me, let me explain, for example, here we have minus $245.
+
+236
+00:33:29.370 --> 00:33:49.500
+Campo Elias Suarez Villagran: Then you have minus 224 the next number is minus 200,000 the theater three, you have the different numbers minus 182 that data, you have all the numbers until the last one is minus.
+
+237
+00:33:51.480 --> 00:33:54.060
+Campo Elias Suarez Villagran: fix these six.
+
+238
+00:33:55.710 --> 00:33:57.510
+Campo Elias Suarez Villagran: My minus 35.
+
+239
+00:33:59.760 --> 00:34:08.010
+Campo Elias Suarez Villagran: Okay, actually those numbers, if you look those numbers here corresponds more or less with the numbers in there excellent axis.
+
+240
+00:34:10.170 --> 00:34:27.270
+Campo Elias Suarez Villagran: Get so this means are they positive values here in the in this axis you all the possibilities of the final results of the experiment Okay, and the other vector the other array.
+
+241
+00:34:28.410 --> 00:34:31.350
+Campo Elias Suarez Villagran: corresponds to how many times.
+
+242
+00:34:32.970 --> 00:34:35.280
+Campo Elias Suarez Villagran: You had these particular.
+
+243
+00:34:37.110 --> 00:34:41.490
+Campo Elias Suarez Villagran: amount of money after the experiment so, for example, in that case, means.
+
+244
+00:34:42.780 --> 00:34:50.730
+Campo Elias Suarez Villagran: aims this in this sector, then 000 Can you see here we have like a gap.
+
+245
+00:34:51.810 --> 00:35:02.910
+Campo Elias Suarez Villagran: Then we have two here, we have two cases this number two corresponds to this number two, so there was two times the next one was.
+
+246
+00:35:02.940 --> 00:35:03.900
+Campo Elias Suarez Villagran: Three times.
+
+247
+00:35:04.590 --> 00:35:16.290
+Campo Elias Suarez Villagran: Then zero can you see another CEO did one one and one, so this is one this one, this is another one, and this is another one okay.
+
+248
+00:35:17.430 --> 00:35:43.920
+Campo Elias Suarez Villagran: So basically means the idea is it's the number of times you you got the different amount of money so let's try something different let's try something different, are not actually that's good are run the command, but now Felipe 1000 times again do the same, but flip the.
+
+249
+00:35:45.690 --> 00:35:45.990
+Max Ens: Okay.
+
+250
+00:35:51.600 --> 00:35:52.110
+Campo Elias Suarez Villagran: Okay.
+
+251
+00:35:53.670 --> 00:36:01.890
+Campo Elias Suarez Villagran: You see, this is more or less distribution at the end okay clip thousand.
+
+252
+00:36:04.770 --> 00:36:05.190
+Okay.
+
+253
+00:36:06.240 --> 00:36:06.930
+Max Ens: So.
+
+254
+00:36:08.610 --> 00:36:08.910
+Max Ens: yeah.
+
+255
+00:36:08.940 --> 00:36:13.950
+Campo Elias Suarez Villagran: Just change do the same, but now we're going to flip 10,000 times.
+
+256
+00:36:28.350 --> 00:36:29.010
+Campo Elias Suarez Villagran: Okay.
+
+257
+00:36:30.390 --> 00:36:32.010
+Campo Elias Suarez Villagran: it's more or less like that.
+
+258
+00:36:33.840 --> 00:36:36.150
+Campo Elias Suarez Villagran: that's really good and.
+
+259
+00:36:37.320 --> 00:36:49.410
+Campo Elias Suarez Villagran: We can change, we can put that the different number of beans, not necessarily is the maximum means the minimum, for example, exchange, the number of beans.
+
+260
+00:36:53.610 --> 00:36:57.510
+Campo Elias Suarez Villagran: is equal to ever know 50 or any number.
+
+261
+00:37:05.670 --> 00:37:13.980
+Campo Elias Suarez Villagran: Put 50, for example, is good and again let's try with 10,000.
+
+262
+00:37:22.680 --> 00:37:33.720
+Campo Elias Suarez Villagran: Okay, look that's that's a really good actually, that is something really amazing in the previous you remember you remember when we were working.
+
+263
+00:37:35.190 --> 00:37:36.000
+With the dice.
+
+264
+00:37:37.350 --> 00:37:38.100
+Campo Elias Suarez Villagran: And at the end.
+
+265
+00:37:39.270 --> 00:37:42.120
+Campo Elias Suarez Villagran: Look, the distribution is more or less like that.
+
+266
+00:37:43.230 --> 00:37:53.730
+Campo Elias Suarez Villagran: If you want go go back or move a move up to see the graphic we got when we were working with the with the dice.
+
+267
+00:37:55.230 --> 00:37:59.610
+Campo Elias Suarez Villagran: Surely spree dissimilar if they go up a little bit.
+
+268
+00:38:00.330 --> 00:38:01.230
+there's another.
+
+269
+00:38:03.060 --> 00:38:04.110
+Campo Elias Suarez Villagran: there's another one.
+
+270
+00:38:07.140 --> 00:38:10.380
+Campo Elias Suarez Villagran: No it's not or maybe burden.
+
+271
+00:38:11.400 --> 00:38:13.800
+Campo Elias Suarez Villagran: I actually that one that one is really good.
+
+272
+00:38:15.450 --> 00:38:16.470
+Campo Elias Suarez Villagran: that one is really good.
+
+273
+00:38:18.570 --> 00:38:22.170
+Campo Elias Suarez Villagran: So you can see, even when you are working.
+
+274
+00:38:23.460 --> 00:38:40.080
+Campo Elias Suarez Villagran: With coins, or even when you are em when you're working with dice a dnn something we are copying something really weird happened because here in all the cases we have like a central value.
+
+275
+00:38:43.440 --> 00:38:48.810
+Campo Elias Suarez Villagran: yeah put any no not that one oh yeah we have here like a central value.
+
+276
+00:38:50.490 --> 00:38:54.180
+Campo Elias Suarez Villagran: From the Syrians 10 minute which are kind of far bill.
+
+277
+00:38:55.080 --> 00:38:55.470
+yeah.
+
+278
+00:38:56.820 --> 00:38:57.540
+Campo Elias Suarez Villagran: And that's is.
+
+279
+00:38:59.040 --> 00:38:59.310
+Campo Elias Suarez Villagran: That.
+
+280
+00:39:01.230 --> 00:39:02.130
+Max Ens: it's because.
+
+281
+00:39:05.340 --> 00:39:06.000
+Max Ens: Because.
+
+282
+00:39:07.140 --> 00:39:08.280
+Max Ens: there's more.
+
+283
+00:39:10.020 --> 00:39:12.120
+Max Ens: possibilities and getting the middle one.
+
+284
+00:39:12.960 --> 00:39:13.380
+yeah.
+
+285
+00:39:15.120 --> 00:39:21.240
+Campo Elias Suarez Villagran: yeah that's that's exactly in the middle one you have more possibilities, but by other side.
+
+286
+00:39:22.410 --> 00:39:28.200
+Campo Elias Suarez Villagran: by other side book graphic at the end is not like this is not like.
+
+287
+00:39:29.430 --> 00:39:32.700
+Campo Elias Suarez Villagran: not like this the graphic at the end it's not like.
+
+288
+00:39:34.200 --> 00:39:37.350
+Campo Elias Suarez Villagran: it's not like this the graphic at the end.
+
+289
+00:39:38.940 --> 00:39:40.200
+Campo Elias Suarez Villagran: is like here.
+
+290
+00:39:44.880 --> 00:39:56.310
+Campo Elias Suarez Villagran: and actually the distribution, the distribution, we are simulating now, for example with coins or or, for example with dice.
+
+291
+00:39:57.810 --> 00:40:03.360
+Campo Elias Suarez Villagran: The distribution is so common not only mathematics it's coming in the real life.
+
+292
+00:40:04.710 --> 00:40:05.970
+Campo Elias Suarez Villagran: This this kind of.
+
+293
+00:40:06.030 --> 00:40:07.650
+Campo Elias Suarez Villagran: of distribution is called.
+
+294
+00:40:08.700 --> 00:40:15.030
+Campo Elias Suarez Villagran: The normal distribution and the normal distribution is is like the basis of probabilities you like, probably this.
+
+295
+00:40:17.610 --> 00:40:19.260
+Campo Elias Suarez Villagran: So yeah actually that's.
+
+296
+00:40:19.380 --> 00:40:30.840
+Campo Elias Suarez Villagran: yeah if if we try, for example, we can try another, we can try another experiment we're doing so Monte Carlo experiment and again we're getting.
+
+297
+00:40:32.070 --> 00:40:40.710
+Campo Elias Suarez Villagran: This particular distribution, we can try something different, we can try something different, and see, for example.
+
+298
+00:40:42.390 --> 00:40:43.860
+Campo Elias Suarez Villagran: yeah what's happened.
+
+299
+00:40:45.870 --> 00:40:59.250
+Campo Elias Suarez Villagran: let's, can you imagine a different experiment a different experiments, similar to the previous one, an experiment I didn't know you seen coins or dies, maybe cut you like playing cards.
+
+300
+00:41:02.100 --> 00:41:02.370
+Max Ens: yeah.
+
+301
+00:41:03.060 --> 00:41:10.290
+Campo Elias Suarez Villagran: You know when the game, we can try to simulate, for example, a poker game, or we can try to simulate any game, you want.
+
+302
+00:41:11.340 --> 00:41:12.450
+Campo Elias Suarez Villagran: Do you remember one.
+
+303
+00:41:17.520 --> 00:41:22.440
+Max Ens: I don't know you shouldn't pick one I don't know many games.
+
+304
+00:41:22.770 --> 00:41:30.960
+Campo Elias Suarez Villagran: Or we can try doing something simpler okay i'm going to to share my screen.
+
+305
+00:41:32.100 --> 00:41:35.220
+Campo Elias Suarez Villagran: And i'm going to we can try with a very simple.
+
+306
+00:41:38.040 --> 00:41:39.720
+Campo Elias Suarez Villagran: Suppose we have the curt.
+
+307
+00:41:42.330 --> 00:41:48.840
+Campo Elias Suarez Villagran: Okay, so you know I suppose we we have all the cards.
+
+308
+00:41:50.400 --> 00:41:56.880
+Campo Elias Suarez Villagran: Are the cards Okay, just to to to make it easier Okay, and we have the card from the.
+
+309
+00:41:58.800 --> 00:42:01.650
+Campo Elias Suarez Villagran: ace number two number three.
+
+310
+00:42:03.360 --> 00:42:08.190
+Campo Elias Suarez Villagran: For example, suppose the aces just like number one number.
+
+311
+00:42:10.710 --> 00:42:11.670
+Campo Elias Suarez Villagran: And at the end.
+
+312
+00:42:12.840 --> 00:42:16.680
+Campo Elias Suarez Villagran: we're getting the number thing Okay, where we have think cards.
+
+313
+00:42:16.830 --> 00:42:17.700
+Campo Elias Suarez Villagran: With the numbers.
+
+314
+00:42:17.760 --> 00:42:30.180
+Campo Elias Suarez Villagran: Okay, we have the numbers from number one to the number thing OK, and now suppose suppose a you're peaking.
+
+315
+00:42:32.400 --> 00:42:33.240
+Campo Elias Suarez Villagran: For card.
+
+316
+00:42:37.620 --> 00:42:40.140
+Campo Elias Suarez Villagran: Okay, but the point is.
+
+317
+00:42:42.090 --> 00:42:50.970
+Campo Elias Suarez Villagran: You cannot be the same card twice because, for example, if you pick the number or actually is not big it's like you have.
+
+318
+00:42:52.800 --> 00:42:55.260
+Campo Elias Suarez Villagran: A back your day.
+
+319
+00:42:56.400 --> 00:43:10.740
+Campo Elias Suarez Villagran: It is you cannot see the cart so you're just speaking and you cannot repeat the same number okay you're speaking the different cards from from a back okay so actually we have here because.
+
+320
+00:43:12.270 --> 00:43:13.980
+Campo Elias Suarez Villagran: You are taking four cards.
+
+321
+00:43:16.080 --> 00:43:16.590
+Campo Elias Suarez Villagran: here.
+
+322
+00:43:17.790 --> 00:43:19.770
+Campo Elias Suarez Villagran: They still Nice.
+
+323
+00:43:23.220 --> 00:43:24.780
+Campo Elias Suarez Villagran: This if.
+
+324
+00:43:26.310 --> 00:43:27.660
+Campo Elias Suarez Villagran: The four cards.
+
+325
+00:43:29.880 --> 00:43:30.570
+Campo Elias Suarez Villagran: Some.
+
+326
+00:43:33.360 --> 00:43:33.870
+Campo Elias Suarez Villagran: More.
+
+327
+00:43:36.960 --> 00:43:37.590
+Campo Elias Suarez Villagran: than.
+
+328
+00:43:38.640 --> 00:43:39.360
+Campo Elias Suarez Villagran: 21.
+
+329
+00:43:41.880 --> 00:43:47.730
+Campo Elias Suarez Villagran: You doing okay and let's imagine you have one victory point.
+
+330
+00:43:49.500 --> 00:43:53.400
+Campo Elias Suarez Villagran: If you if the first card some less.
+
+331
+00:43:55.860 --> 00:43:59.010
+Campo Elias Suarez Villagran: done to anyone, you are going.
+
+332
+00:44:01.710 --> 00:44:10.770
+Campo Elias Suarez Villagran: to lose and victory point okay so actually they do if they gave me pretty similar Okay, which of the cards you're going to pick the curt.
+
+333
+00:44:11.850 --> 00:44:16.350
+Campo Elias Suarez Villagran: A if different cars some more or equal.
+
+334
+00:44:19.830 --> 00:44:25.860
+Campo Elias Suarez Villagran: Then to anyone you're going to a got one big 30 point if not.
+
+335
+00:44:26.880 --> 00:44:27.780
+Campo Elias Suarez Villagran: we're going.
+
+336
+00:44:33.360 --> 00:44:35.580
+Campo Elias Suarez Villagran: to lose one point okay.
+
+337
+00:44:38.220 --> 00:44:39.360
+Max Ens: Use bathroom okay.
+
+338
+00:44:41.670 --> 00:44:42.000
+Campo Elias Suarez Villagran: Then.
+
+339
+00:44:42.720 --> 00:44:44.640
+Max Ens: I had to go to the bathroom okay.
+
+340
+00:44:44.880 --> 00:44:47.100
+Campo Elias Suarez Villagran: Okay that's good that's good.
+
+341
+00:46:17.790 --> 00:46:18.210
+Max Ens: Okay.
+
+342
+00:46:28.350 --> 00:46:31.470
+Campo Elias Suarez Villagran: You can share your screen, if you want.
+
+343
+00:46:32.340 --> 00:46:32.700
+OK.
+
+344
+00:46:45.420 --> 00:46:45.690
+Max Ens: OK.
+
+345
+00:47:11.190 --> 00:47:12.030
+Max Ens: For this.
+
+346
+00:47:15.660 --> 00:47:20.010
+Max Ens: We can do this one awesome that we change it.
+
+347
+00:47:24.870 --> 00:47:26.610
+Campo Elias Suarez Villagran: On to see.
+
+348
+00:47:28.140 --> 00:47:31.500
+Campo Elias Suarez Villagran: If we need to change something okay let's let's set up a.
+
+349
+00:47:43.980 --> 00:47:45.750
+Max Ens: Wait we can just say print.
+
+350
+00:48:03.840 --> 00:48:05.700
+Max Ens: Okay, and then.
+
+351
+00:48:25.380 --> 00:48:25.830
+Max Ens: Okay.
+
+352
+00:48:36.120 --> 00:48:36.510
+Okay.
+
+353
+00:48:49.980 --> 00:48:50.430
+Max Ens: Okay.
+
+354
+00:49:00.210 --> 00:49:00.930
+Max Ens: Now.
+
+355
+00:49:10.560 --> 00:49:12.690
+Max Ens: How many are we, how many cards are we doing doing.
+
+356
+00:49:14.430 --> 00:49:17.130
+Campo Elias Suarez Villagran: It for what we're going to take four cards.
+
+357
+00:49:18.270 --> 00:49:18.690
+Max Ens: Okay.
+
+358
+00:49:18.810 --> 00:49:19.500
+Campo Elias Suarez Villagran: And yeah.
+
+359
+00:50:12.360 --> 00:50:12.630
+Okay.
+
+360
+00:51:02.430 --> 00:51:09.720
+Campo Elias Suarez Villagran: Okay, there is something there is something about this program this just really.
+
+361
+00:51:11.010 --> 00:51:12.300
+Campo Elias Suarez Villagran: Think about this program.
+
+362
+00:51:13.560 --> 00:51:14.010
+Campo Elias Suarez Villagran: here.
+
+363
+00:51:15.150 --> 00:51:17.340
+Campo Elias Suarez Villagran: card one is the random.
+
+364
+00:51:19.050 --> 00:51:27.180
+Campo Elias Suarez Villagran: Integrity between one and 10 so actually the program can take number I don't know big the number two I didn't know.
+
+365
+00:51:28.350 --> 00:51:30.690
+Campo Elias Suarez Villagran: The card to it's a random number OK.
+
+366
+00:51:30.720 --> 00:51:44.370
+Campo Elias Suarez Villagran: OK can take the number two again that's a problem because in some way, it is possible to take the same car twice and we need to avoid that, because here.
+
+367
+00:51:45.510 --> 00:51:52.800
+Campo Elias Suarez Villagran: This program allows to be the same number several times so.
+
+368
+00:51:53.070 --> 00:51:54.030
+Campo Elias Suarez Villagran: in some way.
+
+369
+00:51:54.450 --> 00:51:55.560
+Campo Elias Suarez Villagran: We need to.
+
+370
+00:51:57.000 --> 00:52:00.660
+Campo Elias Suarez Villagran: warranty that we're peaking different numbers.
+
+371
+00:52:02.880 --> 00:52:09.540
+Campo Elias Suarez Villagran: So let me, did you a little command, so if we have a, for example, list.
+
+372
+00:52:11.040 --> 00:52:19.200
+Campo Elias Suarez Villagran: This one is the sequence of numbers, for example, the number on 23456.
+
+373
+00:52:20.370 --> 00:52:21.270
+Campo Elias Suarez Villagran: i'm going to.
+
+374
+00:52:22.410 --> 00:52:24.120
+Campo Elias Suarez Villagran: Show you commands.
+
+375
+00:52:24.480 --> 00:52:25.110
+Random.
+
+376
+00:52:26.730 --> 00:52:27.270
+Campo Elias Suarez Villagran: Good.
+
+377
+00:52:27.420 --> 00:52:28.260
+Max Ens: I can't see.
+
+378
+00:52:30.720 --> 00:52:31.500
+Campo Elias Suarez Villagran: You cannot see.
+
+379
+00:52:32.040 --> 00:52:32.760
+Campo Elias Suarez Villagran: Oh sorry.
+
+380
+00:52:33.030 --> 00:52:33.720
+Max Ens: Now I see.
+
+381
+00:52:35.130 --> 00:52:40.710
+Campo Elias Suarez Villagran: Okay Okay, a random dude okay Oh, let me.
+
+382
+00:52:43.140 --> 00:52:46.200
+Campo Elias Suarez Villagran: Wait i'm going to share my screen.
+
+383
+00:52:47.610 --> 00:52:49.230
+Campo Elias Suarez Villagran: it's going to be easier.
+
+384
+00:52:50.940 --> 00:52:51.360
+Campo Elias Suarez Villagran: So.
+
+385
+00:52:54.330 --> 00:52:55.710
+Campo Elias Suarez Villagran: Suppose we have a list.
+
+386
+00:52:57.030 --> 00:52:58.830
+Campo Elias Suarez Villagran: So you might have least.
+
+387
+00:53:00.810 --> 00:53:07.230
+Campo Elias Suarez Villagran: One corresponds to the numbers 12345 and six okay.
+
+388
+00:53:08.700 --> 00:53:16.500
+Campo Elias Suarez Villagran: And we need to take some of the numbers, I can, there is a command called random choice.
+
+389
+00:53:18.840 --> 00:53:20.070
+Campo Elias Suarez Villagran: of least one.
+
+390
+00:53:21.300 --> 00:53:25.470
+Campo Elias Suarez Villagran: Come on, is going to pick one random number.
+
+391
+00:53:28.830 --> 00:53:40.380
+Campo Elias Suarez Villagran: From the list, but actually we don't need one random number from the least need for this other command is called random but sample.
+
+392
+00:53:41.910 --> 00:53:45.120
+Campo Elias Suarez Villagran: sample it's going to take from this list.
+
+393
+00:53:46.860 --> 00:53:49.740
+Campo Elias Suarez Villagran: One example, if I put three.
+
+394
+00:53:51.420 --> 00:54:03.000
+Campo Elias Suarez Villagran: it's going to pick three of the numbers this little command it's going to pick three random, for example, this one, this one, and this one.
+
+395
+00:54:05.190 --> 00:54:26.250
+Campo Elias Suarez Villagran: Okay it's going to pick some of the numbers and yep it's just a random choice of the numbers random the sample so in our case, we can use something similar at the beginning, we have the list of the of the current from the number one to the number.
+
+396
+00:54:27.360 --> 00:54:32.400
+Campo Elias Suarez Villagran: Then, and then we can just take a sample.
+
+397
+00:54:36.630 --> 00:54:37.290
+Campo Elias Suarez Villagran: So.
+
+398
+00:54:38.670 --> 00:54:40.650
+Campo Elias Suarez Villagran: Please share your your screen.
+
+399
+00:54:47.970 --> 00:54:48.420
+Max Ens: share.
+
+400
+00:54:52.740 --> 00:54:53.130
+Max Ens: Okay.
+
+401
+00:54:59.670 --> 00:55:01.890
+Max Ens: So I changed it snows deck.
+
+402
+00:55:04.950 --> 00:55:07.740
+Campo Elias Suarez Villagran: Is that Nice yeah excellent.
+
+403
+00:55:24.810 --> 00:55:28.350
+Campo Elias Suarez Villagran: coma for it's going to speak for.
+
+404
+00:55:30.180 --> 00:55:30.750
+Campo Elias Suarez Villagran: Excellent.
+
+405
+00:55:32.970 --> 00:55:34.500
+Max Ens: Wait but now I need to make it and.
+
+406
+00:55:34.830 --> 00:55:37.020
+Campo Elias Suarez Villagran: let's let's do something copy.
+
+407
+00:55:37.260 --> 00:55:41.160
+Campo Elias Suarez Villagran: copy these two commands us just to understand what's coming.
+
+408
+00:55:42.690 --> 00:55:46.440
+Campo Elias Suarez Villagran: copy these two commands and let's create a new cell.
+
+409
+00:55:47.610 --> 00:55:51.780
+Campo Elias Suarez Villagran: Only with those two commands and we will see what happens okay.
+
+410
+00:56:00.300 --> 00:56:01.440
+Max Ens: Wait I need to re.
+
+411
+00:56:02.460 --> 00:56:02.790
+Campo Elias Suarez Villagran: yeah.
+
+412
+00:56:13.050 --> 00:56:16.410
+Campo Elias Suarez Villagran: that's good you are storing information.
+
+413
+00:56:21.540 --> 00:56:21.840
+Okay.
+
+414
+00:56:27.300 --> 00:56:35.760
+Campo Elias Suarez Villagran: Exactly So what do you need this is exactly that stern information that and do something else let's put hand.
+
+415
+00:56:36.990 --> 00:56:37.980
+Campo Elias Suarez Villagran: That some.
+
+416
+00:56:40.650 --> 00:56:41.070
+Max Ens: Okay.
+
+417
+00:56:45.630 --> 00:56:46.500
+Max Ens: Oh wait, we need.
+
+418
+00:56:49.890 --> 00:56:51.630
+Max Ens: which I had a hand up so.
+
+419
+00:56:51.690 --> 00:56:53.880
+Campo Elias Suarez Villagran: yeah that's all you need.
+
+420
+00:56:54.480 --> 00:56:55.830
+Campo Elias Suarez Villagran: let's let's throw the command.
+
+421
+00:56:56.910 --> 00:56:57.450
+Campo Elias Suarez Villagran: like that.
+
+422
+00:56:57.750 --> 00:57:01.770
+Max Ens: Wait, we need to print again because printers before.
+
+423
+00:57:03.810 --> 00:57:05.040
+Max Ens: She had to do this.
+
+424
+00:57:14.010 --> 00:57:15.570
+Campo Elias Suarez Villagran: Let me see oh.
+
+425
+00:57:17.070 --> 00:57:17.430
+Campo Elias Suarez Villagran: No.
+
+426
+00:57:18.750 --> 00:57:18.960
+Campo Elias Suarez Villagran: No.
+
+427
+00:57:19.980 --> 00:57:20.610
+Campo Elias Suarez Villagran: Some.
+
+428
+00:57:21.900 --> 00:57:23.370
+Campo Elias Suarez Villagran: least in Python.
+
+429
+00:57:25.920 --> 00:57:30.810
+Campo Elias Suarez Villagran: Not it's some no no it's not that some is some, and this is can't.
+
+430
+00:57:36.060 --> 00:57:36.330
+yeah.
+
+431
+00:57:39.600 --> 00:57:40.530
+Campo Elias Suarez Villagran: Bring the sun.
+
+432
+00:57:43.560 --> 00:57:45.240
+Max Ens: Wait should knowing you just say.
+
+433
+00:57:55.830 --> 00:57:56.190
+Campo Elias Suarez Villagran: yeah.
+
+434
+00:58:09.240 --> 00:58:10.230
+Campo Elias Suarez Villagran: i'm.
+
+435
+00:58:12.390 --> 00:58:13.200
+Campo Elias Suarez Villagran: The lizard.
+
+436
+00:58:15.840 --> 00:58:17.880
+Campo Elias Suarez Villagran: You have one yeah.
+
+437
+00:58:20.070 --> 00:58:20.760
+Max Ens: yeah.
+
+438
+00:58:21.300 --> 00:58:28.200
+Campo Elias Suarez Villagran: So actually yeah that that command it's it's during the day the sun.
+
+439
+00:58:34.140 --> 00:58:35.940
+Max Ens: Wait I can't do this.
+
+440
+00:58:50.160 --> 00:58:50.550
+Max Ens: This.
+
+441
+00:59:20.130 --> 00:59:20.880
+Max Ens: i'm.
+
+442
+00:59:33.270 --> 00:59:34.080
+Max Ens: Oh.
+
+443
+00:59:38.010 --> 00:59:38.610
+Max Ens: Doing.
+
+444
+00:59:44.070 --> 00:59:44.760
+Max Ens: Do we want.
+
+445
+00:59:46.350 --> 00:59:47.070
+Max Ens: We don't need.
+
+446
+00:59:57.900 --> 01:00:03.750
+Campo Elias Suarez Villagran: Remember, you got one be three point if there's some it's Hager than 21.
+
+447
+01:00:05.040 --> 01:00:11.190
+Campo Elias Suarez Villagran: are equal and you are going to last one be three point if this home is.
+
+448
+01:00:12.270 --> 01:00:12.930
+Campo Elias Suarez Villagran: This lizard.
+
+449
+01:00:19.980 --> 01:00:20.850
+Max Ens: And then.
+
+450
+01:00:28.200 --> 01:00:28.680
+Max Ens: If.
+
+451
+01:00:37.980 --> 01:00:38.010
+hey.
+
+452
+01:00:48.870 --> 01:00:49.800
+Max Ens: i'm.
+
+453
+01:00:50.790 --> 01:00:52.260
+Campo Elias Suarez Villagran: mm hmm this yeah.
+
+454
+01:00:53.250 --> 01:00:55.200
+Max Ens: i'm just looking at the problem.
+
+455
+01:01:10.440 --> 01:01:10.590
+Campo Elias Suarez Villagran: and
+
+456
+01:01:11.940 --> 01:01:13.560
+Max Ens: Then we do if.
+
+457
+01:01:35.880 --> 01:01:39.030
+Campo Elias Suarez Villagran: And we need the other information.
+
+458
+01:01:43.890 --> 01:01:49.980
+Campo Elias Suarez Villagran: So what happened if you got less than 21.
+
+459
+01:01:51.960 --> 01:01:52.380
+Campo Elias Suarez Villagran: mm hmm.
+
+460
+01:02:15.210 --> 01:02:17.100
+Max Ens: But isn't that just zero.
+
+461
+01:02:19.650 --> 01:02:22.740
+Campo Elias Suarez Villagran: In that case, use one victory point.
+
+462
+01:02:25.980 --> 01:02:27.930
+Campo Elias Suarez Villagran: This victory point mines.
+
+463
+01:02:31.980 --> 01:02:39.450
+Campo Elias Suarez Villagran: Or maybe oh okay or dependent on the game okay in in my game, you lose one point, but maybe another game.
+
+464
+01:02:40.560 --> 01:02:44.400
+Campo Elias Suarez Villagran: it's nothing okay now, but actually that's that's pretty good.
+
+465
+01:02:45.750 --> 01:02:46.650
+Campo Elias Suarez Villagran: that's pretty good.
+
+466
+01:02:48.360 --> 01:02:49.980
+Campo Elias Suarez Villagran: um yeah.
+
+467
+01:02:55.650 --> 01:02:56.280
+Campo Elias Suarez Villagran: Oh.
+
+468
+01:02:57.630 --> 01:02:59.550
+Campo Elias Suarez Villagran: The 30 points is not defined.
+
+469
+01:02:59.850 --> 01:03:00.960
+Max Ens: Oh, I need to do this.
+
+470
+01:03:01.920 --> 01:03:02.820
+Just capital.
+
+471
+01:03:04.560 --> 01:03:05.850
+Campo Elias Suarez Villagran: yeah yeah.
+
+472
+01:03:12.720 --> 01:03:22.230
+Campo Elias Suarez Villagran: Okay that's that's good i'm not sure you can do this thing you can do like a lot of simulation that the end you're going to get something yeah.
+
+473
+01:03:23.460 --> 01:03:27.030
+Campo Elias Suarez Villagran: different numbers for for for the same.
+
+474
+01:03:28.140 --> 01:03:30.510
+Campo Elias Suarez Villagran: Okay months our time.
+
+475
+01:03:31.950 --> 01:03:37.710
+Campo Elias Suarez Villagran: we're out of time today on your mother told me that she wants to talk with me.
+
+476
+01:03:38.250 --> 01:03:40.020
+Max Ens: Okay, so.
+
+477
+01:03:41.700 --> 01:03:44.610
+Campo Elias Suarez Villagran: I want to talk with your parents, I hope you enjoy it.
+
+478
+01:03:45.270 --> 01:03:46.380
+Campo Elias Suarez Villagran: Yes, it's doing.
+
+479
+01:03:46.560 --> 01:03:52.530
+Campo Elias Suarez Villagran: Those simulations and yeah I want to have a little conversation with them.
+
+480
+01:03:53.550 --> 01:03:53.910
+Max Ens: Okay.
+
+481
+01:03:57.090 --> 01:03:59.160
+Max Ens: Are you ready to bring them over here.
+
+482
+01:04:00.210 --> 01:04:01.200
+Campo Elias Suarez Villagran: yeah yeah.
+
+483
+01:04:02.100 --> 01:04:02.460
+Okay.
+
+484
+01:04:04.320 --> 01:04:04.830
+Campo Elias Suarez Villagran: So.
+
+485
+01:04:05.130 --> 01:04:06.600
+Campo Elias Suarez Villagran: If you can just you.
+
+486
+01:04:30.120 --> 01:04:30.840
+Max Ens: she's coming.
+
+487
+01:04:31.680 --> 01:04:32.700
+Campo Elias Suarez Villagran: Okay that's good.
+
+488
+01:04:44.100 --> 01:04:46.080
+Campo Elias Suarez Villagran: Hello nice to meet you.
+
+489
+01:04:58.650 --> 01:04:59.670
+Campo Elias Suarez Villagran: hey do you hear me.
+
+490
+01:05:00.030 --> 01:05:01.440
+Max Ens: I hear you now perfect.
+
+491
+01:05:01.470 --> 01:05:07.320
+Campo Elias Suarez Villagran: Okay that's excellent yeah working with Max has been just amazing.
+
+492
+01:05:08.490 --> 01:05:10.410
+Campo Elias Suarez Villagran: And yeah I think he he's.
+
+493
+01:05:10.950 --> 01:05:12.960
+Campo Elias Suarez Villagran: He has a lot of good ideas on.
+
+494
+01:05:14.070 --> 01:05:25.890
+Campo Elias Suarez Villagran: And he has like this sense of the programming, it has been really nice working with him and actually we did a lot of different things, today, we were doing some simulations.
+
+495
+01:05:26.430 --> 01:05:41.220
+Campo Elias Suarez Villagran: In Monte Carlo simulations and was super nice simulating different games and I think he he was enjoying all the circle, so you told me a you're interested in taking.
+
+496
+01:05:42.780 --> 01:05:44.280
+Campo Elias Suarez Villagran: Private lessons.
+
+497
+01:05:45.060 --> 01:05:46.800
+Max Ens: On trying to evaluate.
+
+498
+01:05:47.910 --> 01:05:55.410
+Max Ens: What to do so, we have we homeschool and max's background, when he was really young he's.
+
+499
+01:05:55.530 --> 01:06:10.290
+Max Ens: yeah pretty gifted you know, and so we took him through a lot of different schools private school public school public gifted programs, and what we found is that nothing really fit that well because.
+
+500
+01:06:11.610 --> 01:06:28.740
+Max Ens: He he's pretty deep thinker and he can't he has trouble doing a lot of different subjects at the same time, so he can go deeply into a few subjects and it works great, but further general school curriculum, you know they have so much.
+
+501
+01:06:29.100 --> 01:06:42.330
+Max Ens: Understand yeah, we have to just go at our own pace which is you know just different and i'm wondering also what our experience with his latest math is pre algebra he took a course with this.
+
+502
+01:06:44.010 --> 01:06:48.600
+Max Ens: School called the Davidson academy I don't know if you've heard about it.
+
+503
+01:06:48.990 --> 01:06:54.840
+Max Ens: No it's just a gifted school in Reno Nevada but it's for kids kids like him.
+
+504
+01:06:56.250 --> 01:07:01.740
+Max Ens: And what we found was while the subject matter was good and and relevant.
+
+505
+01:07:03.000 --> 01:07:07.980
+Max Ens: The workload, was it was a lot and it just killed it for him in terms of his.
+
+506
+01:07:09.240 --> 01:07:18.870
+Max Ens: The spark you know the interest in in math and science in general, so what I gather from him is that he's.
+
+507
+01:07:20.490 --> 01:07:32.280
+Max Ens: And he has to take algebra next semester, and he does not love math which I understand, but it is his strongest thing you know so.
+
+508
+01:07:32.970 --> 01:07:50.520
+Max Ens: We want to keep it going we he needs to take algebra algebra in the states is you know key to all the other sciences before you can take the kind of the real deal sciences and he's really interested in chemistry that says.
+
+509
+01:07:50.820 --> 01:07:51.870
+Max Ens: Really mm hmm.
+
+510
+01:07:52.170 --> 01:07:53.310
+Campo Elias Suarez Villagran: that's that's Nice.
+
+511
+01:07:53.460 --> 01:08:05.370
+Max Ens: yeah that's his passion, but I can't get him any kind of Midi chemistry classes, I can do these things on the side, but until he takes that algebra it's just kind of like little kids stuff.
+
+512
+01:08:07.050 --> 01:08:12.660
+Max Ens: And for Max you know he could kind of go beyond that a little background his dad is a.
+
+513
+01:08:14.220 --> 01:08:24.810
+Max Ens: programmer a software engineering robotics and we are very science heavy family his father and I started a company about a decade ago we just sold it.
+
+514
+01:08:25.950 --> 01:08:27.660
+Max Ens: And we've been working on robots.
+
+515
+01:08:29.010 --> 01:08:34.230
+Max Ens: yeah for about 20 years I was on the business side and my background is in design.
+
+516
+01:08:35.520 --> 01:08:38.100
+Max Ens: and entrepreneurship and then your dad is the.
+
+517
+01:08:39.210 --> 01:08:46.050
+Max Ens: programmers so that's where he gets a lot of his you know just programming general knowledge, just because dad's around and he's.
+
+518
+01:08:47.070 --> 01:09:00.810
+Max Ens: going to teach it so um yeah, and so what I was wondering about your background your thoughts about teaching kids what your philosophy is your experience, do you like it, what do you like to teach you know, he said he said.
+
+519
+01:09:01.980 --> 01:09:04.710
+Max Ens: His class with you he's usually very upbeat and.
+
+520
+01:09:06.150 --> 01:09:09.750
+Max Ens: I have a sense that he is thinking deeper and more joyfully.
+
+521
+01:09:10.830 --> 01:09:19.740
+Campo Elias Suarez Villagran: Actually yeah um I am Dr mathematics, mathematics and actually my my job is in.
+
+522
+01:09:20.790 --> 01:09:36.240
+Campo Elias Suarez Villagran: A mathematics and economy it's a model mathematics for the kingdom and I discovered global mazzuca like three or four years ago and they love their methodology, the philosophy of global mazzuca like not.
+
+523
+01:09:36.840 --> 01:09:51.780
+Campo Elias Suarez Villagran: dishing actually we don't really teach to the kids we are just Bernard and we're conversation we're having conversation having fun it's a different way to to understand everything so, for example, we are.
+
+524
+01:09:53.880 --> 01:10:01.950
+Campo Elias Suarez Villagran: Talking about programming, but actually we're just having a conversation and he's an all the kids.
+
+525
+01:10:02.280 --> 01:10:15.810
+Campo Elias Suarez Villagran: are doing their best they are creating different methods, but it's not like this is the right method, this is the right one, was like discovered by yourself, so the philosophy of the of the circles in general is.
+
+526
+01:10:17.100 --> 01:10:30.480
+Campo Elias Suarez Villagran: it's a letting the kids discovered by themselves, it is the most important thing of of our philosophy so yeah and discovering and having.
+
+527
+01:10:31.560 --> 01:10:45.960
+Campo Elias Suarez Villagran: A conversation and doing the things by by themselves up this particular tuco was in math and biting and yeah all the kids were super enthusiastic Max was.
+
+528
+01:10:46.530 --> 01:10:56.490
+Campo Elias Suarez Villagran: Just fantastic he needs a lot of he had a lot of different ideas, a we improve different codes, at the end I.
+
+529
+01:10:57.390 --> 01:11:08.190
+Campo Elias Suarez Villagran: Was bringing that because at the end of this year we were doing something like Monte Carlo simulation that for most of us is something that we learned in the university.
+
+530
+01:11:09.000 --> 01:11:19.710
+Campo Elias Suarez Villagran: And yeah it is really good, it is really good having those kind of of interactions so yeah I think for him for him a these methodology.
+
+531
+01:11:20.340 --> 01:11:38.850
+Campo Elias Suarez Villagran: fits very well it's very well because it's not just about just dishing and absorbing not is just about discovering so yeah I was very happy working with human I yeovil think he was enjoying all the all the meetings.
+
+532
+01:11:45.120 --> 01:11:56.130
+Max Ens: Let me think about what that would look like if maybe we set up, though, you know once every two week session would that would you be open to that or.
+
+533
+01:11:57.630 --> 01:12:14.220
+Campo Elias Suarez Villagran: Oh yeah for that it is further I am willing for, for example, I am willing to to have sessions with with him, for example, but in that case you need to communicate first with the board of global material with.
+
+534
+01:12:14.370 --> 01:12:18.330
+Campo Elias Suarez Villagran: Okay info a robot.
+
+535
+01:12:19.500 --> 01:12:34.080
+Campo Elias Suarez Villagran: Who material and send them an email explain the situation and wanting to explain to them, also the situation with Max and they are going to support us, for example, having yeah if you want.
+
+536
+01:12:35.160 --> 01:12:35.610
+Campo Elias Suarez Villagran: A.
+
+537
+01:12:37.020 --> 01:12:43.950
+Campo Elias Suarez Villagran: lesson face to face it, free, but we can organize by means of the world material.
+
+538
+01:12:44.910 --> 01:12:47.910
+Campo Elias Suarez Villagran: Or, if you want to subscribe him to other series.
+
+539
+01:12:50.070 --> 01:12:59.310
+Max Ens: I think that might be my better, that is to do other circles with other kids probably I mean that's the value of it that's.
+
+540
+01:12:59.550 --> 01:13:01.890
+Campo Elias Suarez Villagran: yeah that's that's the body, yes, having the.
+
+541
+01:13:01.920 --> 01:13:03.240
+Campo Elias Suarez Villagran: directions carrying.
+
+542
+01:13:03.270 --> 01:13:05.430
+Campo Elias Suarez Villagran: A yeah that's that's that's this.
+
+543
+01:13:05.760 --> 01:13:06.630
+Campo Elias Suarez Villagran: Is the best part.
+
+544
+01:13:07.080 --> 01:13:09.510
+Max Ens: Right, I mean just continue with that.
+
+545
+01:13:10.080 --> 01:13:20.190
+Max Ens: Thankfully, I sorry i'm just it's been really interesting trying to educate him and trying to find the right means and also you know.
+
+546
+01:13:20.940 --> 01:13:29.280
+Max Ens: In the US, you have to get credit for everything you gotta you know, put it on your transcript and make sure it's legitimate and all the all the things so.
+
+547
+01:13:29.760 --> 01:13:48.480
+Max Ens: um yeah you know so i'm just trying to piece it all together, but he's had really good he's seems to come away from your class really in a good mood and just kind of happy and I i've overheard some of it he's you know he's delving into some pretty pretty good material so.
+
+548
+01:13:49.560 --> 01:13:50.520
+Campo Elias Suarez Villagran: that's that's Nice.
+
+549
+01:13:51.660 --> 01:13:51.960
+yeah.
+
+550
+01:13:53.250 --> 01:13:53.520
+Max Ens: well.
+
+551
+01:13:54.000 --> 01:13:58.440
+Campo Elias Suarez Villagran: That makes a need in the in the near future we're going to open new circles.
+
+552
+01:13:58.890 --> 01:14:02.130
+Campo Elias Suarez Villagran: Oh yeah i'm going to send an email to you.
+
+553
+01:14:03.840 --> 01:14:10.230
+Campo Elias Suarez Villagran: yeah just a reminder of the news circles and you can subscribe him to a new one.
+
+554
+01:14:11.040 --> 01:14:12.450
+Campo Elias Suarez Villagran: Great okay.
+
+555
+01:14:12.930 --> 01:14:16.440
+Max Ens: Thank you so much for taking a little time to talk to me today.
+
+556
+01:14:16.890 --> 01:14:17.760
+Campo Elias Suarez Villagran: No that's that's.
+
+557
+01:14:19.170 --> 01:14:19.980
+Campo Elias Suarez Villagran: Great so.
+
+558
+01:14:21.240 --> 01:14:21.990
+Campo Elias Suarez Villagran: bye bye.
+
+559
+01:14:22.110 --> 01:14:22.560
+bye.
+
