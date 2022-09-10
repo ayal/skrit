@@ -53,13 +53,13 @@ const Script = ({ scrollState, textMap, syncScroll, setSyncScroll, shouldSyncScr
   }, [debouncedScroll])
 
   return <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-    <div style={{ display: 'flex', height: '30px' }}>
+    <div style={{ display: 'flex', height: '30px', borderBottom: '1px solid #ccc', padding: '10px', gap: '10px' }}>
       <button onClick={() => {
         console.log('asked to sync scroll');
         syncScroll();
         setSyncScroll(true);
       }}>Sync</button>
-      <div>{shouldSyncScroll ? 'synced':'unsynced'}</div>
+      <div>{shouldSyncScroll ? 'synced' : 'unsynced'}</div>
       <button onClick={() => {
         setDirection('vertical');
       }}>Vertical</button>
