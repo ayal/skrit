@@ -43,9 +43,9 @@ const mobileCheck = function () {
 
 
 
-const Script = ({ scrollState, textMap, syncScroll, setSyncScroll, shouldSyncScroll, current, videoRef, setCurrentTime, setDirection }) => {
+const Script = ({ percentage, scrollState, textMap, syncScroll, setSyncScroll, shouldSyncScroll, current, videoRef, setCurrentTime, setDirection }) => {
   const debouncedScroll = useMemo(() => debounce(() => {
-    console.log('finished scrolling debounce', Date.now(), 'auto?', scrollState.current.auto);
+    //console.log('finished scrolling debounce', Date.now(), 'auto?', scrollState.current.auto);
   }, 1000), []);
 
   const scrollHandler = useCallback(() => {
@@ -73,7 +73,7 @@ const Script = ({ scrollState, textMap, syncScroll, setSyncScroll, shouldSyncScr
         console.log('>>> MANUAL SCROLL - UNSYNCHING');
         setSyncScroll(false);
       }
-      console.log('scrolling...', 'auto?', scrollState.current.auto);
+      //console.log('scrolling...', 'auto?', scrollState.current.auto);
       scrollHandler()
     }}>
       {
@@ -83,7 +83,10 @@ const Script = ({ scrollState, textMap, syncScroll, setSyncScroll, shouldSyncScr
             videoRef.current.currentTime = tm.start;
             setSyncScroll(true);
             setCurrentTime(tm.start);
-          }} key={`text-part-${tm.id}`} className="text-part" id={`text-part-${tm.id}`} style={{ background: isCurrent ? 'orange' : 'white', flexDirection: 'column' }}>
+          }} key={`text-part-${tm.id}`} className="text-part" id={`text-part-${tm.id}`} style={{ background: isCurrent ? 'orange' : 'white', flexDirection: 'column', position: 'relative' }}>
+            <div style={{ height: '2px', width: '100%', position: 'absolute', top:'0', left: '0' }}>
+              {isCurrent ? <div style={{ height: '2px', width: isCurrent ? `${percentage * 100}%` : '100%', background: 'red' }}></div> : null}
+            </div>
             <div style={{ fontSize: '12px' }}>{`${tm.startTs.split('.')[0]}`}</div>
             <div style={{ color: tm.color, fontWeight: 'bold' }}>{tm.name}</div>
             <div>{tm.text}</div>
@@ -99,10 +102,10 @@ const Video = ({ videoRef, currentTime, setSyncScroll, setCurrentTime, videoUrl 
     <video ref={videoRef} onTimeUpdate={(e) => {
       const delta = Math.abs(e.target.currentTime - currentTime);
       if (delta > 3) { // manual seek in video
-        console.log('delta big - setting sync manually');
+        //console.log('delta big - setting sync manually');
         setSyncScroll(true);
       }
-      console.log('setting current time');
+      //console.log('setting current time', e.target.currentTime);
       setCurrentTime(e.target.currentTime)
     }} controls='on' playsInline={true} style={{ width: '100%' }} src={videoUrl} />
   </div>
@@ -147,6 +150,9 @@ function Comp({ videoUrl, textMap }) {
     return newCurrent;
   }, [currentTime]);
 
+  const percentage = current ? (currentTime - current.start) / (current?.realEnd - current?.start) : 1;
+
+  console.log('?%', percentage)
 
   const scrollState = useRef({})
 
@@ -155,7 +161,7 @@ function Comp({ videoUrl, textMap }) {
       if (current) {
         const element = document.querySelector(`#text-part-${current.id}`);
         scrollState.current.auto = Date.now();
-        console.log('actually scrolling to view');
+        //console.log('actually scrolling to view');
         element?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
@@ -163,9 +169,9 @@ function Comp({ videoUrl, textMap }) {
   }, [current])
 
   useEffect(() => {
-    console.log('scroll effect');
+    //console.log('scroll effect');
     if (!shouldSyncScroll) {
-      console.log('not syncing');
+      //console.log('not syncing');
       return;
     }
     syncScroll()
@@ -186,6 +192,7 @@ function Comp({ videoUrl, textMap }) {
             <Video {...videoProps} />
             <div {...gutterProps} className="gutter" style={{ ...gutterProps.style, cursor: horizontal ? 'col-resize' : 'row-resize' }} />
             <Script
+              percentage={percentage}
               scrollState={scrollState}
               direction={direction}
               setDirection={setDirection}
@@ -233,6 +240,13 @@ function App() {
           end: fromTS(endTs),
         }
       }).filter(Boolean);
+      textMap.map((t, i) => {
+        const next = textMap[i + 1];
+        if (next) {
+          t.realEnd = next.start - 0.001;
+        }
+        return t;
+      })
       const names = Object.keys(textMap.reduce((acc, t) => {
         if (t.name) {
           acc[t.name] = 1;
