@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/skrit/static/css/main.972c5ce3.css",
-    "main.js": "/skrit/static/js/main.f1321f7f.js",
+    "main.js": "/skrit/static/js/main.8bc76fb5.js",
     "static/js/787.9a4bcdd2.chunk.js": "/skrit/static/js/787.9a4bcdd2.chunk.js",
     "index.html": "/skrit/index.html",
     "main.972c5ce3.css.map": "/skrit/static/css/main.972c5ce3.css.map",
-    "main.f1321f7f.js.map": "/skrit/static/js/main.f1321f7f.js.map",
+    "main.8bc76fb5.js.map": "/skrit/static/js/main.8bc76fb5.js.map",
     "787.9a4bcdd2.chunk.js.map": "/skrit/static/js/787.9a4bcdd2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.972c5ce3.css",
-    "static/js/main.f1321f7f.js"
+    "static/js/main.8bc76fb5.js"
   ]
 }
