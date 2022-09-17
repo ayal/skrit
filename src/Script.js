@@ -22,7 +22,9 @@ export const Script = ({ percentage, scrollState, textMap, syncScroll, setScroll
       {
         textMap.map((tm, i) => {
           const isCurrent = current?.id === tm.id;
+          isCurrent && console.log('is current', current.id);
           return <div onClick={() => {
+            console.log('> clicked', tm, tm.start);
             videoRef.current.currentTime = tm.start;
             setScrollSynced(true);
             setCurrentTime(tm.start);

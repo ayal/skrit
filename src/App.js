@@ -16,16 +16,19 @@ function Main({ videoUrl, textMap }) {
     let _current;
     for (let index = 0; index < textMap.length; index++) {
       const tm = textMap[index];
-      if (_currentTime >= tm.start && _currentTime < tm.end) {
+      if (_currentTime >= tm.start && _currentTime <= tm.realEnd) {
+        console.log('setting current', _currentTime, tm);
         _current = tm;
         break;
       }
     }
     if (!_current) {
+      console.log('could not find current for', _currentTime);
       for (let index2 = 0; index2 < textMap.length; index2++) {
         const tm = textMap[index2];
         if (_currentTime < tm.end) {
-          _current = textMap[index2 - 1];
+          console.log('setting current heuristic', _currentTime, tm);
+          _current = textMap[index2];
           break;
         }
       }
@@ -59,7 +62,7 @@ function Main({ videoUrl, textMap }) {
     syncScroll()
   }, [isScrollSynced, syncScroll])
 
-  const videoProps = { videoRef, currentTime, isScrollSynced, setCurrentTime, videoUrl };
+  const videoProps = { videoRef, currentTime, isScrollSynced, setScrollSynced, setCurrentTime, videoUrl };
 
   return (
     <div className="App" style={{ display: 'flex', width: '100%', height: '100vh', flexDirection: 'row', overflow: 'hidden' }}>
@@ -126,7 +129,7 @@ function App() {
       textMap.map((t, i) => {
         const next = textMap[i + 1];
         if (next) {
-          t.realEnd = next.start - 0.001;
+          t.realEnd = next.start - 0.1;
         }
         return t;
       })

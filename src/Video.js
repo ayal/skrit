@@ -5,6 +5,7 @@ export const Video = ({ videoRef, currentTime, setScrollSynced, setCurrentTime, 
         if (delta > 3) { // manual seek in video
           setScrollSynced(true);
         }
+        console.log('current time', e.target.currentTime);
         setCurrentTime(e.target.currentTime)
       }} controls='on' playsInline={true} style={{ width: '100%' }} src={videoUrl} />
     </div>
