@@ -46,8 +46,9 @@ function Main({ videoUrl, textMap }) {
 
   const syncScroll = useCallback(() => {
     const doScroll = async () => {
-      if (current) {
-        const element = document.querySelector(`#text-part-${current.id}`);
+      const id = current?.id || '1';
+      if (id) {
+        const element = document.querySelector(`#text-part-${id}`);
         scrollState.current.auto = Date.now();
         element?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }

@@ -1,4 +1,7 @@
+import { isDarkMode } from "./utils";
+
 export const Script = ({ percentage, scrollState, textMap, syncScroll, setScrollSynced, isScrollSynced, current, videoRef, setCurrentTime, setDirection, horizontal }) => {
+  const selectedColor = isDarkMode() ? '#252336' : '#ffb200b3';
   return <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
     <div style={{ display: 'flex', borderBottom: '1px solid #ccc', padding: '10px', gap: '10px' }}>
     {horizontal ? <button onClick={() => {
@@ -7,7 +10,7 @@ export const Script = ({ percentage, scrollState, textMap, syncScroll, setScroll
         <button onClick={() => {
           setDirection('horizontal');
         }}>Horizontal</button>}
-      {!isScrollSynced ? <button onClick={() => {
+      {!isScrollSynced && current ? <button onClick={() => {
         syncScroll();
         setScrollSynced(true);
       }}>Sync</button> : null}
@@ -28,7 +31,7 @@ export const Script = ({ percentage, scrollState, textMap, syncScroll, setScroll
             videoRef.current.currentTime = tm.start;
             setScrollSynced(true);
             setCurrentTime(tm.start);
-          }} key={`text-part-${tm.id}`} className="text-part" id={`text-part-${tm.id}`} style={{ background: isCurrent ? '#252336' : 'none', flexDirection: 'column', position: 'relative' }}>
+          }} key={`text-part-${tm.id}`} className="text-part" id={`text-part-${tm.id}`} style={{ background: isCurrent ? selectedColor : 'none', flexDirection: 'column', position: 'relative' }}>
             <div style={{ height: '2px', width: '100%', position: 'absolute', top: '0', left: '0' }}>
               {isCurrent ? <div style={{ height: '2px', width: isCurrent ? `${percentage * 100}%` : '100%', transition: 'width 0.5s', background: 'red' }}></div> : null}
             </div>

@@ -1,3 +1,6 @@
+body {
+  font-family: "Roboto";
+}
 .text-part {
   padding: 20px;
   cursor: pointer;
