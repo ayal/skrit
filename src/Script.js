@@ -4,7 +4,7 @@ export const Script = ({ percentage, scrollState, textMap, syncScroll, setScroll
   const selectedColor = isDarkMode() ? '#252336' : '#ffb200b3';
   return <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
     <div style={{ display: 'flex', borderBottom: '1px solid #ccc', padding: '10px', gap: '10px' }}>
-    {horizontal ? <button onClick={() => {
+      {horizontal ? <button onClick={() => {
         setDirection('vertical');
       }}>Vertical</button> :
         <button onClick={() => {
@@ -23,7 +23,7 @@ export const Script = ({ percentage, scrollState, textMap, syncScroll, setScroll
       }
     }}>
       {
-        textMap.map((tm, i) => {
+        textMap?.length ? textMap.map((tm, i) => {
           const isCurrent = current?.id === tm.id;
           isCurrent && console.log('is current', current.id);
           return <div onClick={() => {
@@ -39,7 +39,10 @@ export const Script = ({ percentage, scrollState, textMap, syncScroll, setScroll
             <div style={{ color: tm.color, fontWeight: 'bold' }}>{tm.name}</div>
             <div>{tm.text}</div>
           </div>
-        })
+        }) : 
+        <div style={{ margin: 'auto', display: 'flex', textAlign: 'center', justifyContent: 'center' }}>
+          Error loading text
+        </div>
       }
     </div>
   </div>

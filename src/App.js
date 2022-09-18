@@ -108,7 +108,18 @@ function App() {
 
   useEffect(() => {
     const run = async () => {
-      const text = await (await fetch(textUrl)).text();
+      let text;
+      try {
+        text = await (await fetch(textUrl)).text();
+        if (text.match('uc-error')) {
+         return;
+        }
+      }
+      catch (ex) {
+        console.log('>>> error loading text', ex);
+        return;
+      }
+      
       const textMap = text.split('\r\n\r\n').map(t => {
         const parts = t.split('\r\n');
         if (parts.length !== 3) {
