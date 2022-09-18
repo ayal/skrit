@@ -66,7 +66,7 @@ function Main({ videoUrl, textMap, textError, title }) {
   const videoProps = { videoRef, title, currentTime, isScrollSynced, setScrollSynced, setCurrentTime, videoUrl };
 
   return (
-    <div className="App" style={{ display: 'flex', width: '100%', height: '90vh', minHeight: '-webkit-fill-available', flexDirection: 'row', overflow: 'hidden' }}>
+    <div className="App" style={{ display: 'flex', width: '100%', height: mobileCheck() ? '92vh' : '99vh', minHeight: '-webkit-fill-available', flexDirection: 'row', overflow: 'hidden' }}>
 
       <Split direction={direction} render={({ getGridProps, getGutterProps }) => {
         const props = getGridProps();
