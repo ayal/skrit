@@ -5,7 +5,7 @@ import { fromTS, mobileCheck } from './utils';
 import { Script } from './Script';
 import { Video } from './Video';
 
-function Main({ videoUrl, textMap, textError }) {
+function Main({ videoUrl, textMap, textError, title }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [isScrollSynced, setScrollSynced] = useState(true);
   const [direction, setDirection] = useState(mobileCheck() ? 'vertical' : 'horizontal');
@@ -63,7 +63,7 @@ function Main({ videoUrl, textMap, textError }) {
     syncScroll()
   }, [isScrollSynced, syncScroll])
 
-  const videoProps = { videoRef, currentTime, isScrollSynced, setScrollSynced, setCurrentTime, videoUrl };
+  const videoProps = { videoRef, title, currentTime, isScrollSynced, setScrollSynced, setCurrentTime, videoUrl };
 
   return (
     <div className="App" style={{ display: 'flex', width: '100%', height: '100vh', flexDirection: 'row', overflow: 'hidden' }}>
@@ -107,6 +107,7 @@ function App() {
 
   const videoUrl = url.searchParams.get('videoUrl');
   const textUrl = url.searchParams.get('textUrl');
+  const title = url.searchParams.get('title');
 
   useEffect(() => {
     const run = async () => {
@@ -171,7 +172,7 @@ function App() {
 
   }, [])
 
-  return <Main videoUrl={videoUrl} textMap={textMap} textError={textError} />
+  return <Main videoUrl={videoUrl} textMap={textMap} title={title} textError={textError} />
 }
 
 export default App;
