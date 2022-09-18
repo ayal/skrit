@@ -1,6 +1,6 @@
 import { isDarkMode } from "./utils";
 
-export const Script = ({ percentage, scrollState, textMap, syncScroll, setScrollSynced, isScrollSynced, current, videoRef, setCurrentTime, setDirection, horizontal }) => {
+export const Script = ({ percentage, scrollState, textMap, textError, syncScroll, setScrollSynced, isScrollSynced, current, videoRef, setCurrentTime, setDirection, horizontal }) => {
   const selectedColor = isDarkMode() ? '#252336' : '#ffb200b3';
   return <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
     <div style={{ display: 'flex', borderBottom: '1px solid #ccc', padding: '10px', gap: '10px' }}>
@@ -23,7 +23,7 @@ export const Script = ({ percentage, scrollState, textMap, syncScroll, setScroll
       }
     }}>
       {
-        textMap?.length ? textMap.map((tm, i) => {
+        !textError ? textMap.map((tm, i) => {
           const isCurrent = current?.id === tm.id;
           isCurrent && console.log('is current', current.id);
           return <div onClick={() => {
@@ -41,7 +41,7 @@ export const Script = ({ percentage, scrollState, textMap, syncScroll, setScroll
           </div>
         }) : 
         <div style={{ margin: 'auto', display: 'flex', textAlign: 'center', justifyContent: 'center' }}>
-          Error loading text
+          {textError}
         </div>
       }
     </div>

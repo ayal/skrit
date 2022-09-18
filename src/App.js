@@ -5,7 +5,7 @@ import { fromTS, mobileCheck } from './utils';
 import { Script } from './Script';
 import { Video } from './Video';
 
-function Main({ videoUrl, textMap }) {
+function Main({ videoUrl, textMap, textError }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [isScrollSynced, setScrollSynced] = useState(true);
   const [direction, setDirection] = useState(mobileCheck() ? 'vertical' : 'horizontal');
@@ -84,6 +84,7 @@ function Main({ videoUrl, textMap }) {
               direction={direction}
               setDirection={setDirection}
               textMap={textMap}
+              textError={textError}
               syncScroll={syncScroll}
               setScrollSynced={setScrollSynced}
               isScrollSynced={isScrollSynced}
@@ -101,6 +102,7 @@ const Colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"
 
 function App() {
   const [textMap, setTextMap] = useState([]);
+  const [textError, setTextError] = useState('');
   const url = new URL(window.location.href);
 
   const videoUrl = url.searchParams.get('videoUrl');
@@ -112,11 +114,12 @@ function App() {
       try {
         text = await (await fetch(textUrl)).text();
         if (text.match('uc-error')) {
+          setTextError('Error Downloading Text');
          return;
         }
       }
       catch (ex) {
-        console.log('>>> error loading text', ex);
+        setTextError(`Text Error: ${ex.message}`);
         return;
       }
       
@@ -164,7 +167,7 @@ function App() {
 
   }, [])
 
-  return <Main videoUrl={videoUrl} textMap={textMap} />
+  return <Main videoUrl={videoUrl} textMap={textMap} textError={textError} />
 }
 
 export default App;
