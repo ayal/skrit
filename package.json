@@ -29,7 +29,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://ayal.github.io/skrit",
+  "homepage": "https://recordings.theglobalmathcircle.org",
   "browserslist": {
     "production": [
       ">0.2%",
