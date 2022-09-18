@@ -1,13 +1,21 @@
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+}
+
 body {
   font-family: "Roboto";
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
 }
+
 .text-part {
   padding: 20px;
   cursor: pointer;
 }
 
 .gutter {
-  background:rgba(63, 63, 63, 0.886);
+  background: rgba(63, 63, 63, 0.886);
 }
 
 body {
