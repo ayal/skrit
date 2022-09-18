@@ -110,6 +110,12 @@ function App() {
   const title = url.searchParams.get('title');
 
   useEffect(() => {
+    if (title) {
+      document.title = title;
+    }
+  }, [title])
+
+  useEffect(() => {
     const run = async () => {
       let text;
       try {
