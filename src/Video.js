@@ -11,7 +11,7 @@ const VIDEO_ERRORS = {
 export const Video = ({ videoRef, currentTime, setScrollSynced, setCurrentTime, videoUrl, title }) => {
   const [error, setError] = useState(false);
   return <div style={{ display: 'flex', background: 'black', color: isDarkMode() ? 'white' : 'black', overflow: 'hidden', flexDirection: 'column' }}>
-    <div style={{ display: 'flex', padding: '20px'}}>{title}</div>
+    <div style={{ display: 'flex', padding: '20px', boxSizing: 'border-box'}}>{title}</div>
     {
       error ?
         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', overflow: 'hidden'}}>
