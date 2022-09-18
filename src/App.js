@@ -115,15 +115,15 @@ function App() {
         text = await (await fetch(textUrl)).text();
         if (text.match('uc-error')) {
           setTextError('Error Downloading Text');
-         return;
+          return;
         }
       }
       catch (ex) {
         setTextError(`Text Error: ${ex.message}`);
         return;
       }
-      
-      const textMap = text.split('\r\n\r\n').map(t => {
+
+      let textMap = text.split('\r\n\r\n').map(t => {
         const parts = t.split('\r\n');
         if (parts.length !== 3) {
           return null;
@@ -147,6 +147,10 @@ function App() {
           t.realEnd = next.start - 0.1;
         }
         return t;
+      })
+      textMap = textMap.map((x, i) => {
+        x.name = x.name ? x.name : textMap[i - 1]?.name;
+        return x;
       })
       const names = Object.keys(textMap.reduce((acc, t) => {
         if (t.name) {
