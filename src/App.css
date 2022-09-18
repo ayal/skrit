@@ -1,12 +1,12 @@
-html {
-  height: fill-available;
-  height: -webkit-fill-available;
+html, body, #root, .App {
+  height: 100%;
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Roboto";
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
+  width: 100%;
 }
 
 .text-part {
@@ -18,8 +18,3 @@ body {
   background: rgba(63, 63, 63, 0.886);
 }
 
-body {
-  padding: 0;
-  width: 100%;
-  max-width: 999;
-}
