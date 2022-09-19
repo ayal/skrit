@@ -5,7 +5,7 @@ import { fromTS, mobileCheck } from './utils';
 import { Script } from './Script';
 import { Video } from './Video';
 
-function Main({ videoUrl, textMap, textError, title }) {
+function Main({ videoUrl, textMap, textError, title, setVideoReady, videoReady }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [isScrollSynced, setScrollSynced] = useState(true);
   const [direction, setDirection] = useState(mobileCheck() ? 'vertical' : 'horizontal');
@@ -63,7 +63,7 @@ function Main({ videoUrl, textMap, textError, title }) {
     syncScroll()
   }, [isScrollSynced, syncScroll])
 
-  const videoProps = { videoRef, title, currentTime, isScrollSynced, setScrollSynced, setCurrentTime, videoUrl };
+  const videoProps = { videoRef, title, currentTime, isScrollSynced, setScrollSynced, setCurrentTime, videoUrl, videoReady, setVideoReady };
 
   return (
     <div className="App" style={{ display: 'flex', width: '100%', flexDirection: 'row', overflow: 'hidden' }}>
@@ -89,7 +89,10 @@ function Main({ videoUrl, textMap, textError, title }) {
               setScrollSynced={setScrollSynced}
               isScrollSynced={isScrollSynced}
               current={current}
-              videoRef={videoRef} setCurrentTime={setCurrentTime} />
+              videoRef={videoRef} 
+              setCurrentTime={setCurrentTime} 
+              videoReady={videoReady}
+              />
           </div>
         )
       }} />
@@ -103,6 +106,7 @@ const Colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"
 function App() {
   const [textMap, setTextMap] = useState([]);
   const [textError, setTextError] = useState('');
+  const [videoReady, setVideoReady] = useState();
   const url = new URL(window.location.href);
 
   const videoUrl = url.searchParams.get('videoUrl');
@@ -181,7 +185,7 @@ function App() {
 
   }, [])
 
-  return <Main videoUrl={videoUrl} textMap={textMap} title={title} textError={textError} />
+  return <Main videoUrl={videoUrl} textMap={textMap} title={title} textError={textError} videoReady={videoReady} setVideoReady={setVideoReady} />
 }
 
 export default App;
