@@ -17,17 +17,17 @@ function Main({ videoUrl, textMap, textError, title, setVideoReady, videoReady }
     for (let index = 0; index < textMap.length; index++) {
       const tm = textMap[index];
       if (_currentTime >= tm.start && _currentTime <= tm.realEnd) {
-        console.log('setting current', _currentTime, tm);
+        //console.log('setting current', _currentTime, tm);
         _current = tm;
         break;
       }
     }
     if (!_current) {
-      console.log('could not find current for', _currentTime);
+      //console.log('could not find current for', _currentTime);
       for (let index2 = 0; index2 < textMap.length; index2++) {
         const tm = textMap[index2];
         if (_currentTime < tm.end) {
-          console.log('setting current heuristic', _currentTime, tm);
+          //console.log('setting current heuristic', _currentTime, tm);
           _current = textMap[index2];
           break;
         }

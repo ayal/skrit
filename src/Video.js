@@ -22,17 +22,17 @@ export const Video = ({ videoRef, currentTime, setScrollSynced, setCurrentTime, 
           <video 
           onCanPlay={()=>{
             setVideoReady(true)
-            console.log('>>> can play.....');
+            //console.log('>>> video ready');
           }}
           onError={(e) => {
-            console.log('>>>>>', e);
+            console.error('>>> error', error?.target?.error?.message);
             setError(e);
           }} ref={videoRef} onTimeUpdate={(e) => {
             const delta = Math.abs(e.target.currentTime - currentTime);
             if (delta > 3) { // manual seek in video
               setScrollSynced(true);
             }
-            console.log('current time', e.target.currentTime);
+            //console.log('current time', e.target.currentTime);
             setCurrentTime(e.target.currentTime)
           }} controls='on' playsInline={true} style={{ width: '100%', height: '100%' }} src={videoUrl} />
         </div>
