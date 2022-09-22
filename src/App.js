@@ -89,10 +89,10 @@ function Main({ videoUrl, textMap, textError, title, setVideoReady, videoReady }
               setScrollSynced={setScrollSynced}
               isScrollSynced={isScrollSynced}
               current={current}
-              videoRef={videoRef} 
-              setCurrentTime={setCurrentTime} 
+              videoRef={videoRef}
+              setCurrentTime={setCurrentTime}
               videoReady={videoReady}
-              />
+            />
           </div>
         )
       }} />
@@ -162,10 +162,24 @@ function App() {
         }
         return t;
       })
+
+      // set name to be the same name as previous
       textMap = textMap.map((x, i) => {
         x.name = x.name ? x.name : textMap[i - 1]?.name;
         return x;
       })
+
+      // delete dup names
+      textMap = textMap.map((x, i) => {
+        const isDup = x.name === textMap[i - 1]?.name;
+        return {
+          ...x,
+          noName: isDup ? true : false,
+        }
+      })
+
+      console.log('textmap', textMap);
+
       const names = Object.keys(textMap.reduce((acc, t) => {
         if (t.name) {
           acc[t.name] = 1;

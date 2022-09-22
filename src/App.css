@@ -1,4 +1,7 @@
-html, body, #root, .App {
+html,
+body,
+#root,
+.App {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -16,11 +19,25 @@ body {
 }
 
 .text-part {
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
+}
+
+.text-part.no-name {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.text-part.no-name .text-start-time {
+  display: none;
+}
+
+.text-part.no-name .text-part-name {
+  display: none;
 }
 
 .gutter {
   background: rgba(63, 63, 63, 0.886);
 }
-
