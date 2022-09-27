@@ -36,13 +36,15 @@ export const Script = ({ percentage, scrollState, textMap, textError, syncScroll
               setCurrentTime(tm.start);
             }} key={`text-part-${tm.id}`} className={`text-part ${!tm.noName ? 'has-name' : 'no-name'}`} id={`text-part-${tm.id}`}
               style={{ flexDirection: 'column', position: 'relative' }}>
-              <div className="text-start-time" style={{ fontSize: '12px' }}>{`${tm.startTs.split('.')[0]}`}</div>
-              <div className="text-part-name" style={{ color: tm.color, fontWeight: 'bold' }}>{tm.name}</div>
+              <div className="name-type-wrapper" style={{display: 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', paddingLeft: '8px'}}>
+                <div className="text-part-name" style={{ color: tm.color, fontWeight: 'bold' }}>{tm.name}</div>
+                <div className="text-start-time" style={{ fontSize: '12px' }}>{`${tm.startTs.split('.')[0]}`}</div>
+              </div>
               <div className="text-part-wrapper" style={{ paddingTop: '3px', position: 'relative' }}>
                 <div className="loader" style={{ height: '1px', width: '100%', position: 'absolute', top: '0', left: '0' }}>
                   {isCurrent ? <div style={{ height: '1px', width: isCurrent ? `${percentage * 100}%` : '100%', transition: 'width 0.5s', background: 'red' }}></div> : null}
                 </div>
-                <div className="text-part-text" style={{ background: isCurrent ? selectedColor : 'none' }}>{tm.text}</div>
+                <div className="text-part-text" style={{ background: isCurrent ? selectedColor : 'none', paddingLeft: '8px' }}>{tm.text}</div>
               </div>
             </div>
           }) :
