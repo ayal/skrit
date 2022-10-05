@@ -5,7 +5,7 @@ import { fromTS, mobileCheck } from './utils';
 import { Script } from './Script';
 import { Video } from './Video';
 
-function Main({ videoUrl, textMap, textError, title, setVideoReady, videoReady }) {
+function Main({ videoUrl, textMap, textError, title, setVideoReady, videoReady, ts }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [isScrollSynced, setScrollSynced] = useState(true);
   const [direction, setDirection] = useState(mobileCheck() ? 'vertical' : 'horizontal');
@@ -63,7 +63,7 @@ function Main({ videoUrl, textMap, textError, title, setVideoReady, videoReady }
     syncScroll()
   }, [isScrollSynced, syncScroll])
 
-  const videoProps = { videoRef, title, currentTime, isScrollSynced, setScrollSynced, setCurrentTime, videoUrl, videoReady, setVideoReady };
+  const videoProps = { videoRef, title, currentTime, isScrollSynced, ts, setScrollSynced, setCurrentTime, videoUrl, videoReady, setVideoReady };
 
   return (
     <div className="App" style={{ display: 'flex', width: '100%', flexDirection: 'row', overflow: 'hidden' }}>
@@ -112,6 +112,7 @@ function App() {
   const videoUrl = url.searchParams.get('videoUrl');
   const textUrl = url.searchParams.get('textUrl');
   const title = url.searchParams.get('title');
+  const ts = url.searchParams.get('ts');
 
   useEffect(() => {
     if (title) {
@@ -178,7 +179,7 @@ function App() {
         }
       })
 
-      console.log('textmap', textMap);
+      // console.log('textmap', textMap);
 
       const names = Object.keys(textMap.reduce((acc, t) => {
         if (t.name) {
@@ -199,7 +200,7 @@ function App() {
 
   }, [])
 
-  return <Main videoUrl={videoUrl} textMap={textMap} title={title} textError={textError} videoReady={videoReady} setVideoReady={setVideoReady} />
+  return <Main videoUrl={videoUrl} textMap={textMap} title={title} textError={textError} videoReady={videoReady} setVideoReady={setVideoReady} ts={ts} />
 }
 
 export default App;
