@@ -16,7 +16,7 @@ export const Script = ({ percentage, scrollState, textMap, textError, syncScroll
         url.searchParams.append('ts', currentTime);
         navigator?.clipboard?.writeText?.(url.toString())
         console.log('>>> url with time', url.toString());
-      }}>Copy Time</button>}
+      }}>Link w/time</button>}
       {!isScrollSynced && current ? <button onClick={() => {
         syncScroll();
         setScrollSynced(true);
