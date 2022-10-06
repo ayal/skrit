@@ -11,10 +11,11 @@ const VIDEO_ERRORS = {
 export const Video = ({ videoRef, videoReady, ts, currentTime, setScrollSynced, setCurrentTime, setVideoReady, videoUrl, title }) => {
   const [error, setError] = useState(false);
   useEffect(() => {
-    if (videoReady && ts) {
+    if (videoReady && ts && parseFloat(ts)) {
+      const fts = parseFloat(ts);
       console.log('>>> checking ts', ts, videoReady);
-      setCurrentTime(ts);
-      videoRef.current.currentTime = ts;
+      setCurrentTime(parseFloat(fts));
+      videoRef.current.currentTime = parseFloat(fts);
     }
   }, [videoReady, videoRef])
 

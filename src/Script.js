@@ -1,6 +1,6 @@
 import { isDarkMode } from "./utils";
 
-export const Script = ({ percentage, scrollState, textMap, textError, syncScroll, setScrollSynced, isScrollSynced, current, videoRef, setCurrentTime, setDirection, horizontal, videoReady }) => {
+export const Script = ({ percentage, scrollState, textMap, textError, syncScroll, setScrollSynced, isScrollSynced, current, videoRef, setCurrentTime, currentTime, setDirection, horizontal, videoReady }) => {
   const selectedColor = isDarkMode() ? '#252336' : '#ffb200b3';
   return <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
     <div style={{ display: 'flex', borderBottom: '1px solid #ccc', padding: '10px', gap: '10px' }}>
@@ -14,6 +14,13 @@ export const Script = ({ percentage, scrollState, textMap, textError, syncScroll
         syncScroll();
         setScrollSynced(true);
       }}>Sync</button> : null}
+      {<button onClick={() => {
+        const url = new URL(window.location.href);
+        url.searchParams.delete('ts');
+        url.searchParams.append('ts', currentTime);
+        navigator?.clipboard?.writeText?.(url.toString())
+        console.log('>>> url with time', url.toString());
+      }}>Copy Time</button>}
     </div>
     <div id="text-container" style={{ display: 'flex', flex: '1', flexDirection: 'column', overflow: 'auto' }} onScroll={() => {
       const isAutoScrolling = Date.now() - scrollState.current.auto < 1000;

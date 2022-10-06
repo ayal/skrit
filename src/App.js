@@ -63,7 +63,7 @@ function Main({ videoUrl, textMap, textError, title, setVideoReady, videoReady, 
     syncScroll()
   }, [isScrollSynced, syncScroll])
 
-  const videoProps = { videoRef, title, currentTime, isScrollSynced, ts, setScrollSynced, setCurrentTime, videoUrl, videoReady, setVideoReady };
+  const videoProps = { videoRef, title, currentTime, isScrollSynced, videoReady, ts, setScrollSynced, setCurrentTime, videoUrl, videoReady, setVideoReady };
 
   return (
     <div className="App" style={{ display: 'flex', width: '100%', flexDirection: 'row', overflow: 'hidden' }}>
@@ -78,6 +78,7 @@ function Main({ videoUrl, textMap, textError, title, setVideoReady, videoReady, 
             <Video {...videoProps} />
             <div {...gutterProps} className="gutter" style={{ ...gutterProps.style, cursor: horizontal ? 'col-resize' : 'row-resize' }} />
             <Script
+              currentTime={currentTime}
               horizontal={horizontal}
               percentage={percentage}
               scrollState={scrollState}
