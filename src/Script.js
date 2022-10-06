@@ -10,10 +10,6 @@ export const Script = ({ percentage, scrollState, textMap, textError, syncScroll
         <button onClick={() => {
           setDirection('horizontal');
         }}>Horizontal</button>}
-      {!isScrollSynced && current ? <button onClick={() => {
-        syncScroll();
-        setScrollSynced(true);
-      }}>Sync</button> : null}
       {<button onClick={() => {
         const url = new URL(window.location.href);
         url.searchParams.delete('ts');
@@ -21,6 +17,10 @@ export const Script = ({ percentage, scrollState, textMap, textError, syncScroll
         navigator?.clipboard?.writeText?.(url.toString())
         console.log('>>> url with time', url.toString());
       }}>Copy Time</button>}
+      {!isScrollSynced && current ? <button onClick={() => {
+        syncScroll();
+        setScrollSynced(true);
+      }}>Sync</button> : null}
     </div>
     <div id="text-container" style={{ display: 'flex', flex: '1', flexDirection: 'column', overflow: 'auto' }} onScroll={() => {
       const isAutoScrolling = Date.now() - scrollState.current.auto < 1000;
@@ -43,7 +43,7 @@ export const Script = ({ percentage, scrollState, textMap, textError, syncScroll
               setCurrentTime(tm.start);
             }} key={`text-part-${tm.id}`} className={`text-part ${!tm.noName ? 'has-name' : 'no-name'}`} id={`text-part-${tm.id}`}
               style={{ flexDirection: 'column', position: 'relative' }}>
-              <div className="name-type-wrapper" style={{display: 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', paddingLeft: '8px'}}>
+              <div className="name-type-wrapper" style={{ display: 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', paddingLeft: '8px' }}>
                 <div className="text-part-name" style={{ color: tm.color, fontWeight: 'bold' }}>{tm.name}</div>
                 <div className="text-start-time" style={{ fontSize: '12px' }}>{`${tm.startTs.split('.')[0]}`}</div>
               </div>
