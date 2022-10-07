@@ -31,11 +31,11 @@ export const Video = ({ videoRef, videoReady, ts, currentTime, setScrollSynced, 
     {
       error ?
         <div style={{ width: '300px', height: '300px', flex: 1, display: 'flex', alignItems: 'center', background: 'black', zIndex: 1, position: 'absolute', justifyContent: 'center', overflow: 'hidden', opacity: 0.6 }}>
-          {`Error Loading Video: ${error?.target?.error?.message} (${VIDEO_ERRORS[error?.target?.error?.code] || error?.target?.error?.code || '0'})`}
-          <button onClick={() => {
+          {`Error Loading Video: ${error?.target?.error?.message || 'Unknown'} (${VIDEO_ERRORS[error?.target?.error?.code] || error?.target?.error?.code || '0'})`}
+          {/* <button onClick={() => {
             console.log('>>> reload', videoRef.current.on)
             videoRef.current.load();
-          }}>Reload</button>
+          }}>Reload</button> */}
         </div> : null
     }
     <div style={{ margin: 'auto', flex: 1, overflow: 'hidden' }}>
