@@ -27,18 +27,15 @@ export const Video = ({ videoRef, videoReady, ts, currentTime, setScrollSynced, 
   }, [videoReady, videoRef])
 
   return <div style={{ display: 'flex', background: 'black', color: 'white', overflow: 'hidden', flexDirection: 'column', position: 'relative' }}>
-
     <div style={{ display: 'flex', padding: '20px', boxSizing: 'border-box' }}>{title}</div>
     {
       error ?
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center', width: '100%', height: '100%', background: 'black', zIndex: 1, position: 'absolute', justifyContent: 'center', overflow: 'hidden', opacity: 0.6 }}>
-          <div style={{ width: '300px', height: '300px', background: 'black', }}>
-            {`Error Loading Video: ${error?.target?.error?.message} (${VIDEO_ERRORS[error.target.error.code] || error.target.error.code})`}
-            <button onClick={() => {
-              console.log('>>> reload', videoRef.current.on)
-              videoRef.current.load();
-            }}>Reload</button>
-          </div>
+        <div style={{ width: '300px', height: '300px', flex: 1, display: 'flex', alignItems: 'center', background: 'black', zIndex: 1, position: 'absolute', justifyContent: 'center', overflow: 'hidden', opacity: 0.6 }}>
+          {`Error Loading Video: ${error?.target?.error?.message} (${VIDEO_ERRORS[error?.target?.error?.code] || error?.target?.error?.code || '0'})`}
+          <button onClick={() => {
+            console.log('>>> reload', videoRef.current.on)
+            videoRef.current.load();
+          }}>Reload</button>
         </div> : null
     }
     <div style={{ margin: 'auto', flex: 1, overflow: 'hidden' }}>
