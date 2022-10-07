@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { isDarkMode } from "./utils";
 
 const VIDEO_ERRORS = {
@@ -55,7 +55,10 @@ export const Video = ({ videoRef, videoReady, ts, currentTime, setScrollSynced, 
           console.error('>>> error', error?.target?.error?.message);
           e.currentTime = currentTime;
           setError(e);
-        }} ref={videoRef} onTimeUpdate={(e) => {
+          console.log('>>> reloading video');
+          videoRef.current.load();
+        }} ref={videoRef}
+        onTimeUpdate={(e) => {
           const delta = Math.abs(e.target.currentTime - currentTime);
           if (delta > 3) { // manual seek in video
             setScrollSynced(true);
